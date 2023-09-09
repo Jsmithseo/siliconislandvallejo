@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'reactstrap';
 import Image from 'next/image';
-import Logo from '../public/logo.png';
+import Logo from '../public/logo.PNG';
 import ContactUs from './components/ContactUsform';
 
 export default function Index() {
