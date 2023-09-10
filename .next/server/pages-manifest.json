@@ -1,7 +1,9 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
+  "/_app": "pages/_app.js",
+  "/sendMail": "pages/sendMail.js",
+  "/thankyou": "pages/thankyou.js",
+  "/components/ContactUsform": "pages/components/ContactUsform.js",
   "/": "pages/index.js",
-  "/thankyou": "pages/thankyou.js"
+  "/_document": "pages/_document.js"
 }
