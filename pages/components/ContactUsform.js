@@ -3,30 +3,44 @@ import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ContactUs = () => {
-
-    const handleSubmit = async (e) => {
-        e.preventDefault();
     
-        const formData = new FormData(e.target);
-        const data = {};
-        formData.forEach((value, key) => (data[key] = value));
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+      });
+    
+      const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevState) => ({ ...prevState, [name]: value }));
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        // Handle form submission logic here
+        console.log(`Form submitted:`, formData);
     
         const response = await fetch('./api/sendMail', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(data),
+          body: JSON.stringify(formData),
         });
-    
         if (response.status === 200) {
           console.log('Email sent successfully');
           window.location.href = '/thankyou';
         } else {
           console.error('Error sending email');
         }
+    
+        setFormData({
+          name: '',
+          email: '',
+          message: '',
+        });
       };
-      
+    
   return (
     <Container>
       <br></br>
