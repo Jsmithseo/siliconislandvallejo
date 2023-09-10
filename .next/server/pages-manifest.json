@@ -1,9 +1,1 @@
-{
-  "/_error": "pages/_error.js",
-  "/_app": "pages/_app.js",
-  "/sendMail": "pages/sendMail.js",
-  "/thankyou": "pages/thankyou.js",
-  "/components/ContactUsform": "pages/components/ContactUsform.js",
-  "/": "pages/index.js",
-  "/_document": "pages/_document.js"
-}
+{}
