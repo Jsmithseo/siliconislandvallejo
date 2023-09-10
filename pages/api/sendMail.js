@@ -1,5 +1,4 @@
 import nodemailer from 'nodemailer';
-import { useRouter } from 'next/router';
 
 export default async (req, res) => {
   if (req.method === 'POST') {

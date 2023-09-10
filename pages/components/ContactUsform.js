@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Label, Input, Container } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import nodemailer from 'nodemailer';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
