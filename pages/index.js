@@ -40,7 +40,7 @@ export default function Index() {
               src={Logo}
               alt="Description of Image"
               width={300}
-              height={85}
+              height={70}
             />
           </center>
           <br></br>
