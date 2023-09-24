@@ -8,7 +8,7 @@ export default async (req, res) => {
       service: 'Gmail',
       auth: {
         user: 'Jeremysmithseo@gmail.com',
-        pass: 'rjuabcwfiwqgvsyf',
+        pass: 'egdohmilxzrluwuq',
       },
     });
 

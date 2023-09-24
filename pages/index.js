@@ -2,14 +2,16 @@ import React from 'react';
 import Image from 'next/image';
 import Logo from '../public/logo.PNG';
 import ContactUs from './components/ContactUsform';
-import { Button } from 'reactstrap';
 import { Button as MuiButton } from '@mui/material';
 import { jsx } from '@emotion/react';
 import styled from '@emotion/styled';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import MaterialContactform from './components/MaterialContactform';
+// import MaterialContactform from './components/MaterialContactform';
+import Button from '@mui/material/Button';
+import Link from 'next/link';
+
 
 export default function Index() {
   const MainStyle = {
@@ -53,15 +55,20 @@ export default function Index() {
             pixel and line of code, and emerge as a master of the digital
             domain.
           </div>
-          <MaterialContactform />
+          <br></br>
+          <center>
+            <Link href="https://www.calendly.com/softwaresmitty/30min">
+            <Button variant="contained" color="primary" type="submit">
+        Schedule Some Time
+      </Button>
+            </Link>
+
+          </center>
+
         </Container>
       </React.Fragment>
-
-      {/* <ContactUs /> */}
       <div>
-        {/* <MuiButton variant="contained" color="primary">
-        Material-UI Button
-      </MuiButton> */}
+
       </div>
     </div>
   );
