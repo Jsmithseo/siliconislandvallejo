@@ -9,7 +9,7 @@ import styled from '@emotion/styled';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-
+import MaterialContactform from './components/MaterialContactform';
 
 export default function Index() {
   const MainStyle = {
@@ -27,32 +27,42 @@ export default function Index() {
     fontFamily: 'avenir',
   };
   return (
-    
     <div style={MainStyle}>
-          <React.Fragment>
-      <CssBaseline />
-      <Container maxWidth="lg">
-      <center>
-        <Image src={Logo} alt="Description of Image" width={300} height={275} />
-      </center>
-        <h2 style={companyTitle}>
-        Onyx Creative Labs: Where Web Development Meets Craftsmanship
-      </h2>
-        <div style={copy}>
-          Just as a barber college hones the art of the perfect trim and style,
-          Onyx Creative Labs sharpens your skills in the intricate world of web
-          development. Dive into the craftsmanship behind every pixel and line
-          of code, and emerge as a master of the digital domain.
-        </div>
-      </Container>
-    </React.Fragment>
+      <React.Fragment>
+        <CssBaseline />
+        <Container maxWidth="lg">
+          <br></br>
+          <br></br>
+          <center>
+            <Image
+              src={Logo}
+              alt="Description of Image"
+              width={300}
+              height={85}
+            />
+          </center>
+          <br></br>
+          <br></br>
+          <h2 style={companyTitle}>
+            Onyx Creative Labs: Where Web Development Meets Craftsmanship
+          </h2>
+          <div style={copy}>
+            Just as a barber college hones the art of the perfect trim and
+            style, Onyx Creative Labs sharpens your skills in the intricate
+            world of web development. Dive into the craftsmanship behind every
+            pixel and line of code, and emerge as a master of the digital
+            domain.
+          </div>
+          <MaterialContactform />
+        </Container>
+      </React.Fragment>
 
-        <ContactUs />
-            <div>
-      {/* <MuiButton variant="contained" color="primary">
+      {/* <ContactUs /> */}
+      <div>
+        {/* <MuiButton variant="contained" color="primary">
         Material-UI Button
       </MuiButton> */}
-    </div>
+      </div>
     </div>
   );
 }
