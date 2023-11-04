@@ -11,6 +11,8 @@ import Container from '@mui/material/Container';
 // import MaterialContactform from './components/MaterialContactform';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
+import BaseLayout from './components/layouts/BaseLayouts.js';
+
 
 
 export default function Index() {
@@ -29,6 +31,7 @@ export default function Index() {
     fontFamily: 'avenir',
   };
   return (
+    <BaseLayout>
     <div style={MainStyle}>
       <React.Fragment>
         <CssBaseline />
@@ -49,7 +52,7 @@ export default function Index() {
             Onyx Creative Labs: Where leading edge meets boots on the ground
           </h2>
           <div style={copy}>
-          we collaborate with non-profit organizations and government entities, employing Scrum and Agile project management techniques to facilitate scalability and growth.
+          We collaborate with non-profit organizations and government entities, employing Scrum and Agile project management techniques, as well as innovative software development solutions, to facilitate scalability and growth.
           </div>
           <br></br>
           <center>
@@ -67,5 +70,6 @@ export default function Index() {
 
       </div>
     </div>
+    </BaseLayout>
   );
 }
