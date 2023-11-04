@@ -40,20 +40,16 @@ export default function Index() {
               src={Logo}
               alt="Description of Image"
               width={300}
-              height={70}
+              height={75}
             />
           </center>
           <br></br>
           <br></br>
           <h2 style={companyTitle}>
-            Onyx Creative Labs: Where Web Development Meets Craftsmanship
+            Onyx Creative Labs: Where leading edge meets boots on the ground
           </h2>
           <div style={copy}>
-            Just as a barber college hones the art of the perfect trim and
-            style, Onyx Creative Labs sharpens your skills in the intricate
-            world of web development. Dive into the craftsmanship behind every
-            pixel and line of code, and emerge as a master of the digital
-            domain.
+          we collaborate with non-profit organizations and government entities, employing Scrum and Agile project management techniques to facilitate scalability and growth.
           </div>
           <br></br>
           <center>
@@ -64,7 +60,7 @@ export default function Index() {
             </Link>
 
           </center>
-<br></br>
+
         </Container>
       </React.Fragment>
       <div>

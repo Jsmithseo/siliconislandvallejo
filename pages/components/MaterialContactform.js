@@ -3,43 +3,43 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 
 const MaterialContactform = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-      });
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevState) => ({ ...prevState, [name]: value }));
-      };
-    
-      const handleSubmit = async (e) => {
-        e.preventDefault();
-        // Handle form submission logic here
-        console.log(`Form submitted:`, formData);
-    
-        const response = await fetch('./api/sendMail', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(formData),
-        });
-        if (response.status === 200) {
-          console.log('Email sent successfully');
-          window.location.href = '/thankyou';
-        } else {
-          console.error('Error sending email');
-        }
-    
-        setFormData({
-          name: '',
-          email: '',
-          message: '',
-        });
-      };
-    
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log(`Form submitted:`, formData);
+
+    const response = await fetch('./api/sendMail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+    if (response.status === 200) {
+      console.log('Email sent successfully');
+      window.location.href = '/thankyou';
+    } else {
+      console.error('Error sending email');
+    }
+
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
+  };
+
   return (
     <form>
       <TextField
