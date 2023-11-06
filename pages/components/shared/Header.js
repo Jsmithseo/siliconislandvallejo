@@ -22,13 +22,15 @@ const MyHeader = () => {
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
-        <NavItem>
-            <NavLink href="/#"><span className="brandName">Onyx Creative Labs</span></NavLink>
-          </NavItem>
-          {/* <NavItem>
-            <NavLink href="/about">About</NavLink>
+          <NavItem>
+            <NavLink href="/#">
+              <span className="brandName">Onyx Creative Labs</span>
+            </NavLink>
           </NavItem>
           <NavItem>
+            <NavLink href="/about">About</NavLink>
+          </NavItem>
+          {/* <NavItem>
             <NavLink href="/about">Services & Products</NavLink>
           </NavItem>
           <NavItem>

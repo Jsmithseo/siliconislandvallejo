@@ -13,8 +13,6 @@ import Button from '@mui/material/Button';
 import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 
-
-
 export default function Index() {
   const MainStyle = {
     overflowX: 'hidden',
@@ -32,44 +30,43 @@ export default function Index() {
   };
   return (
     <BaseLayout>
-    <div style={MainStyle}>
-      <React.Fragment>
-        <CssBaseline />
-        <Container maxWidth="lg">
-          <br></br>
-          <br></br>
-          <center>
-            <Image
-              src={Logo}
-              alt="Description of Image"
-              width={300}
-              height={75}
-            />
-          </center>
-          <br></br>
-          <br></br>
-          <h2 style={companyTitle}>
-            Onyx Creative Labs: Where leading edge meets boots on the ground
-          </h2>
-          <div style={copy}>
-          We collaborate with non-profit organizations and government entities, employing Scrum and Agile project management techniques, as well as innovative software development solutions, to facilitate scalability and growth.
-          </div>
-          <br></br>
-          <center>
-            <Link href="https://www.calendly.com/softwaresmitty/30min">
-            <Button variant="contained" color="primary" type="submit">
-        Schedule Some Time
-      </Button>
-            </Link>
-
-          </center>
-
-        </Container>
-      </React.Fragment>
-      <div>
-
+      <div style={MainStyle}>
+        <React.Fragment>
+          <CssBaseline />
+          <Container maxWidth="lg">
+            <br></br>
+            <br></br>
+            <center>
+              <Image
+                src={Logo}
+                alt="Description of Image"
+                width={300}
+                height={75}
+              />
+            </center>
+            <br></br>
+            <br></br>
+            <h2 style={companyTitle}>
+              Onyx Creative Labs: Where leading edge meets boots on the ground
+            </h2>
+            <div style={copy}>
+              We collaborate with non-profit organizations and government
+              entities, employing Scrum and Agile project management techniques,
+              as well as innovative software development solutions, to
+              facilitate scalability and growth.
+            </div>
+            <br></br>
+            <center>
+              <Link href="https://www.calendly.com/softwaresmitty/30min">
+                <Button variant="contained" color="primary" type="submit">
+                  Schedule Some Time
+                </Button>
+              </Link>
+            </center>
+          </Container>
+        </React.Fragment>
+        <div></div>
       </div>
-    </div>
     </BaseLayout>
   );
 }
