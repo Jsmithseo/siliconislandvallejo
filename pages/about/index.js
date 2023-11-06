@@ -19,11 +19,11 @@ export default function About() {
       <div className="jumbtron">
         <div className="container">
           <center>
-            <img
+            {/* <img
               src="/logo.png" // Replace with your image path
               alt="Image"
               className="img-fluid logo"
-            />
+            /> */}
           </center>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default function About() {
           <Col md="12">
             <div className="bio-content">
               <p>
-                n the midst of a decade-long adventure through startup culture,
+                In the midst of a decade-long adventure through startup culture,
                 I've not only fine-tuned my skills as a web developer working
                 hand-in-hand with product marketing teams but also engaged in
                 the creation and development of bespoke web applications. These
