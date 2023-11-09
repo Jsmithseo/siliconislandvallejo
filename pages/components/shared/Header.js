@@ -30,10 +30,10 @@ const MyHeader = () => {
           <NavItem>
             <NavLink href="/about">About</NavLink>
           </NavItem>
-          {/* <NavItem>
-            <NavLink href="/about">Services & Products</NavLink>
-          </NavItem>
           <NavItem>
+            <NavLink href="/playbook">playbook</NavLink>
+          </NavItem>
+          {/*<NavItem>
             <NavLink href="/Lessons">Case Studies</NavLink>
           </NavItem>
           <NavItem>
