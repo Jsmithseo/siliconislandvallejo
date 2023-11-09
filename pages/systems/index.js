@@ -81,9 +81,12 @@ export default function Planning() {
                   <span className="callouttext2">
                     Volunteer Management System
                   </span>
+                  <ul>
                   <li>Recruitment and Onboarding</li>
                   <li>Scheduling and Coordination</li>
                   <li>Tracking Contributions and Impact</li>
+                  </ul>
+           
                   <span className="callouttext2">
                     Program Management System
                   </span>
