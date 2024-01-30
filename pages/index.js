@@ -46,14 +46,8 @@ export default function Index() {
             </center>
             <br></br>
             <br></br>
-            <h2 style={companyTitle}>
-              Onyx Creative Labs: Where leading edge meets boots on the ground
-            </h2>
             <div style={copy}>
-              We collaborate with non-profit organizations and government
-              entities, employing Scrum and Agile project management techniques,
-              as well as innovative software development solutions, to
-              facilitate scalability and growth.
+        Welcome to Onyx Creative Labs, your go-to destination for digital marketing excellence. Whether you're a seasoned business owner or just starting off, we are here to supercharge your success. Our proven marketing strategies and innovative tools are designed to help you stand out in the competitive market.
             </div>
             <br></br>
             <center>
