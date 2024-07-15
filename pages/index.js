@@ -51,7 +51,7 @@ export default function Index() {
             </div>
             <br></br>
             <center>
-              <Link href="https://www.calendly.com/softwaresmitty/30min">
+              <Link href="https://calendly.com/jeremy-onyxcreativelabs/client-discovery">
                 <Button variant="contained" color="primary" type="submit">
                   Schedule Some Time
                 </Button>
