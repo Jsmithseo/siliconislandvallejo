@@ -28,9 +28,9 @@ const MyHeader = () => {
               <span className="brandName">Onyx Creative Labs</span>
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink href="/playbook">Case Studies</NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink href="/about">Our Story</NavLink>
           </NavItem>
