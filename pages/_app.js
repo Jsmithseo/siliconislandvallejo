@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Script from 'next/script';
 
+
 const GA_TRACKING_ID = 'AW-16644561919';
 
 const App = ({ Component, pageProps }) => {

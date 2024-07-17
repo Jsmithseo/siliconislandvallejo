@@ -1,14 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Logo from '../public/logo.PNG';
-import ContactUs from './components/ContactUsform';
-import { Button as MuiButton } from '@mui/material';
-import { jsx } from '@emotion/react';
-import styled from '@emotion/styled';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-// import MaterialContactform from './components/MaterialContactform';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
@@ -28,6 +22,18 @@ export default function Index() {
     fontSize: '30px',
     fontFamily: 'avenir',
   };
+
+ const startButton = {
+  
+ };
+
+
+ const consultButton = {
+  marginTop: '20px',
+ };
+
+
+ 
   return (
     <BaseLayout>
       <div style={MainStyle}>
@@ -51,11 +57,20 @@ export default function Index() {
             </div>
             <br></br>
             <center>
-              <Link href="https://calendly.com/jeremy-onyxcreativelabs/client-discovery">
+            <div style={startButton}>
+              <Link  href="/contact">
                 <Button variant="contained" color="primary" type="submit">
-                  Schedule Some Time
+                  Start Project
                 </Button>
               </Link>
+              </div>
+              <div style={consultButton}>
+              <Link href="https://calendly.com/jeremy-onyxcreativelabs/client-discovery">
+                <Button variant="contained" color="primary" type="submit">
+                  30 mins Free consult
+                </Button>
+              </Link>
+              </div>
             </center>
           </Container>
         </React.Fragment>
