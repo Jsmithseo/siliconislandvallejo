@@ -29,11 +29,12 @@ const MyHeader = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/about">Our Story</NavLink>
+            <NavLink href="/playbook">Case Studies</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/playbook">playbook</NavLink>
+            <NavLink href="/about">Our Story</NavLink>
           </NavItem>
+
           {/*<NavItem>
             <NavLink href="/Lessons">Case Studies</NavLink>
           </NavItem>

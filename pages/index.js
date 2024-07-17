@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import HowWeWork from './components/HowWework';
+import ExampleWork from './components/ExampleWork';
+
 
 export default function Index() {
   const MainStyle = {
@@ -71,6 +73,7 @@ export default function Index() {
             <br></br>
             <br></br>
             <HowWeWork/>
+            <ExampleWork/>
           </Container>
         </React.Fragment>
         <div></div>
