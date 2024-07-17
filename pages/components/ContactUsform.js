@@ -20,8 +20,9 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    const hubspotEndpoint = 'https://api.hsforms.com/submissions/v3/integration/submit/46783071/952f60aa-30ae-4ba4-a588-cc20fbd06eb7';
+
+    const hubspotEndpoint =
+      'https://api.hsforms.com/submissions/v3/integration/submit/46783071/952f60aa-30ae-4ba4-a588-cc20fbd06eb7';
 
     const payload = {
       fields: [
@@ -47,14 +48,22 @@ const ContactForm = () => {
   };
 
   return (
-    <div style={{
-      background: '#000',
-      padding: '20px',
-      borderRadius: '5px',
-      boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'
-    }}>
+    <div
+      style={{
+        background: '#000',
+        padding: '20px',
+        borderRadius: '5px',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+      }}
+    >
       <form onSubmit={handleSubmit}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '15px' }}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            marginBottom: '15px',
+          }}
+        >
           <div style={{ flex: '1', marginRight: '10px' }}>
             <input
               type="text"
@@ -68,7 +77,7 @@ const ContactForm = () => {
                 fontSize: '14px',
                 backgroundColor: '#24252B',
                 color: '#fff',
-                marginBottom: '10px'
+                marginBottom: '10px',
               }}
               placeholder="First Name"
               value={formData.firstName}
@@ -89,7 +98,7 @@ const ContactForm = () => {
                 fontSize: '14px',
                 backgroundColor: '#24252B',
                 color: '#fff',
-                marginBottom: '10px'
+                marginBottom: '10px',
               }}
               placeholder="Last Name"
               value={formData.lastName}
@@ -111,7 +120,7 @@ const ContactForm = () => {
               fontSize: '14px',
               backgroundColor: '#24252B',
               color: '#fff',
-              marginBottom: '10px'
+              marginBottom: '10px',
             }}
             placeholder="Email"
             value={formData.email}
@@ -133,7 +142,7 @@ const ContactForm = () => {
               color: '#fff',
               height: '100px',
               resize: 'vertical',
-              marginBottom: '10px'
+              marginBottom: '10px',
             }}
             placeholder="Enter any project specific details..."
             value={formData.description}
@@ -142,19 +151,38 @@ const ContactForm = () => {
           ></textarea>
         </div>
         <div style={{ marginBottom: '15px' }}>
-          <label htmlFor="budget" style={{ color: '#fff', marginBottom: '4px', fontSize: '18px', fontWeight: '500' }}>Budget Range</label>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '15px' }}>
-            <div style={{
-              flex: '1',
-              backgroundColor: '#20222B',
+          <label
+            htmlFor="budget"
+            style={{
               color: '#fff',
-              borderRadius: '20px',
-              cursor: 'pointer',
-              textAlign: 'left',
+              marginBottom: '4px',
+              fontSize: '18px',
+              fontWeight: '500',
+            }}
+          >
+            Budget Range
+          </label>
+          <div
+            style={{
               display: 'flex',
-              alignItems: 'center',
-              padding: '10px 20px'
-            }}>
+              flexWrap: 'wrap',
+              gap: '10px',
+              marginBottom: '15px',
+            }}
+          >
+            <div
+              style={{
+                flex: '1',
+                backgroundColor: '#20222B',
+                color: '#fff',
+                borderRadius: '20px',
+                cursor: 'pointer',
+                textAlign: 'left',
+                display: 'flex',
+                alignItems: 'center',
+                padding: '10px 20px',
+              }}
+            >
               <input
                 type="radio"
                 id="budget-low"
@@ -164,19 +192,23 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-low" style={{ marginLeft: '10px' }}>Ongoing Support (Custom Quote)</label>
+              <label htmlFor="budget-low" style={{ marginLeft: '10px' }}>
+                Ongoing Support (Custom Quote)
+              </label>
             </div>
-            <div style={{
-              flex: '1',
-              backgroundColor: '#20222B',
-              color: '#fff',
-              borderRadius: '20px',
-              cursor: 'pointer',
-              textAlign: 'left',
-              display: 'flex',
-              alignItems: 'center',
-              padding: '10px 20px'
-            }}>
+            <div
+              style={{
+                flex: '1',
+                backgroundColor: '#20222B',
+                color: '#fff',
+                borderRadius: '20px',
+                cursor: 'pointer',
+                textAlign: 'left',
+                display: 'flex',
+                alignItems: 'center',
+                padding: '10px 20px',
+              }}
+            >
               <input
                 type="radio"
                 id="budget-low-5000-30000"
@@ -186,19 +218,26 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-low-5000-30000" style={{ marginLeft: '10px' }}>Up to $10,000</label>
+              <label
+                htmlFor="budget-low-5000-30000"
+                style={{ marginLeft: '10px' }}
+              >
+                Up to $10,000
+              </label>
             </div>
-            <div style={{
-              flex: '1',
-              backgroundColor: '#20222B',
-              color: '#fff',
-              borderRadius: '20px',
-              cursor: 'pointer',
-              textAlign: 'left',
-              display: 'flex',
-              alignItems: 'center',
-              padding: '10px 20px'
-            }}>
+            <div
+              style={{
+                flex: '1',
+                backgroundColor: '#20222B',
+                color: '#fff',
+                borderRadius: '20px',
+                cursor: 'pointer',
+                textAlign: 'left',
+                display: 'flex',
+                alignItems: 'center',
+                padding: '10px 20px',
+              }}
+            >
               <input
                 type="radio"
                 id="budget-medium"
@@ -208,19 +247,23 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-medium" style={{ marginLeft: '10px' }}>$10,000 - $50,000</label>
+              <label htmlFor="budget-medium" style={{ marginLeft: '10px' }}>
+                $10,000 - $50,000
+              </label>
             </div>
-            <div style={{
-              flex: '1',
-              backgroundColor: '#20222B',
-              color: '#fff',
-              borderRadius: '20px',
-              cursor: 'pointer',
-              textAlign: 'left',
-              display: 'flex',
-              alignItems: 'center',
-              padding: '10px 20px'
-            }}>
+            <div
+              style={{
+                flex: '1',
+                backgroundColor: '#20222B',
+                color: '#fff',
+                borderRadius: '20px',
+                cursor: 'pointer',
+                textAlign: 'left',
+                display: 'flex',
+                alignItems: 'center',
+                padding: '10px 20px',
+              }}
+            >
               <input
                 type="radio"
                 id="budget-high"
@@ -230,23 +273,28 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-high" style={{ marginLeft: '10px' }}>$50,000+ </label>
+              <label htmlFor="budget-high" style={{ marginLeft: '10px' }}>
+                $50,000+{' '}
+              </label>
             </div>
           </div>
         </div>
-        <button type="submit" style={{
-          padding: '10px 20px',
-          backgroundColor: '#B0000B',
-          color: '#fff',
-          border: 'none',
-          borderRadius: '3px',
-          cursor: 'pointer',
-          fontSize: '16px',
-          textAlign: 'center',
-          textTransform: 'uppercase',
-          whiteSpace: 'nowrap',
-          fontWeight: '500'
-        }}>
+        <button
+          type="submit"
+          style={{
+            padding: '10px 20px',
+            backgroundColor: '#B0000B',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '3px',
+            cursor: 'pointer',
+            fontSize: '16px',
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            whiteSpace: 'nowrap',
+            fontWeight: '500',
+          }}
+        >
           Start A Project
         </button>
       </form>

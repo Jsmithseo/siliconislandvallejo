@@ -9,6 +9,7 @@ import {
   Collapse,
   NavbarToggler,
 } from 'reactstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MyHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,7 @@ const MyHeader = () => {
             </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/about">About</NavLink>
+            <NavLink href="/about">Our Story</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/playbook">playbook</NavLink>

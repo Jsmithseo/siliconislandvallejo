@@ -6,6 +6,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
+import HowWeWork from './components/HowWework';
 
 export default function Index() {
   const MainStyle = {
@@ -23,17 +24,13 @@ export default function Index() {
     fontFamily: 'avenir',
   };
 
- const startButton = {
-  
- };
+  const buttonContainer = {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '20px', // Space between buttons
+    marginTop: '20px',
+  };
 
-
- const consultButton = {
-  marginTop: '20px',
- };
-
-
- 
   return (
     <BaseLayout>
       <div style={MainStyle}>
@@ -53,25 +50,27 @@ export default function Index() {
             <br></br>
             <br></br>
             <div style={copy}>
-        Welcome to Onyx Creative Labs, your go-to destination for digital marketing excellence. Whether you're a seasoned business owner or just starting off, we are here to supercharge your success. Our proven marketing strategies and innovative tools are designed to help you stand out in the competitive market.
+              Our proven marketing strategies and innovative tools are designed
+              to help you stand out in the competitive market.
             </div>
             <br></br>
-            <center>
-            <div style={startButton}>
-              <Link  href="/contact">
+            <div style={buttonContainer}>
+              <Link href="/contact">
                 <Button variant="contained" color="primary" type="submit">
                   Start Project
                 </Button>
               </Link>
-              </div>
-              <div style={consultButton}>
               <Link href="https://calendly.com/jeremy-onyxcreativelabs/client-discovery">
                 <Button variant="contained" color="primary" type="submit">
                   30 mins Free consult
                 </Button>
               </Link>
-              </div>
-            </center>
+            </div>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <HowWeWork/>
           </Container>
         </React.Fragment>
         <div></div>
