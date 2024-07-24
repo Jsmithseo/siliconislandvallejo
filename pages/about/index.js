@@ -5,7 +5,7 @@ import BaseLayout from '../components/layouts/BaseLayouts';
 
 const MainStyle = {
   overflowX: 'hidden',
-  color: '#fff', // White text color for contrast
+  color: '#000',
   minHeight: '100vh', // Ensure it takes the full viewport height
   display: 'flex',
   flexDirection: 'column',
@@ -17,6 +17,7 @@ const copyStyle = {
   fontFamily: 'Avenir, sans-serif',
   textAlign: 'center',
   marginBottom: '20px',
+  
 };
 
 const headlineStyle = {
@@ -27,7 +28,6 @@ const headlineStyle = {
 };
 
 const bioContentStyle = {
-  background: '#24252B',
   padding: '20px',
   borderRadius: '5px',
   boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
