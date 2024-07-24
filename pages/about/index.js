@@ -17,7 +17,6 @@ const copyStyle = {
   fontFamily: 'Avenir, sans-serif',
   textAlign: 'center',
   marginBottom: '20px',
-  
 };
 
 const headlineStyle = {
@@ -43,30 +42,46 @@ export default function About() {
             </Col>
             <Col md="12">
               <div style={bioContentStyle}>
-                At Onyx Creative Labs, we combine cutting-edge technology with
-                the development of future tech talent. Our journey began with
-                nearly 15 years of experience in web development and marketing,
-                during which we honed our skills with some of the world’s
-                leading companies. This experience taught us advanced techniques
-                and strategies that led to significant growth—up to 3-4 times—by
-                optimizing websites and web apps for conversion and user
-                experience. With a passion for supporting small businesses and
-                non-profits, we saw an opportunity to bring our expertise to
-                those who need it most. We believe that if these strategies can
-                propel industry leaders, they can also empower the "little guys"
-                to achieve remarkable growth. That's why we founded Onyx
-                Creative Labs. Our unique approach involves building
-                high-quality websites and web apps through our apprenticeship
-                program. Talented developers in our program work on these
-                projects, and their code is meticulously reviewed by mentors to
-                ensure top-notch results. This process not only delivers
-                exceptional value to our clients but also provides students with
-                invaluable real-world experience. For our clients, this means
-                receiving expertly crafted websites and web apps at a fraction
-                of the typical cost. For our students, it means gaining hands-on
-                experience while contributing to meaningful projects. Through
-                our work, we aim to help small businesses grow and thrive,
-                making a significant impact in their respective fields.
+                <b>Vision and Mission</b>
+                At Onyx Creative Labs, we combine cutting-edge technology
+                solutions with hands-on mentorship to help small businesses
+                thrive and develop future tech talent. Our websites and web apps
+                are built by developers in our apprenticeship program, ensuring
+                that our clients receive high-quality digital products while our
+                students gain invaluable real-world experience.
+                <b>What We Offer</b>
+                For our clients, this means access to top-tier websites and web
+                apps at a fraction of the usual cost. Each project is
+                meticulously reviewed by a mentor to ensure the highest quality
+                results, benefiting both our clients and our students. Our
+                students gain hands-on experience working with companies in the
+                marketplace, making them well-prepared for future careers in
+                technology.
+                <b>Our Founder’s Journey</b>
+                After nearly 15 years in the market as a web developer and
+                marketer, I’ve had the privilege of working with some of the
+                best companies in the world. Through my efforts in optimizing
+                websites and web apps for conversion and user experience, I’ve
+                helped companies achieve growth of up to 3-4 times. However,
+                I’ve always had a passion for working with small businesses and
+                non-profits, offering them the same leading-edge expertise that
+                industry giants use to scale their operations.
+                <b>The Birth of Onyx Creative Labs</b>I founded Onyx Creative
+                Labs with the belief that if advanced strategies and
+                technologies can work for industry leaders, they can also
+                empower the “little guys.” Our mission is to help small
+                businesses grow and scale through services like the development
+                of progressive web apps and A/B testing. By leveraging our
+                expertise, we enable our clients to become big fish in a small
+                pond.
+                <b>Commitment to Excellence</b>
+                At Onyx Creative Labs, we are dedicated to delivering
+                exceptional results for our clients while fostering the next
+                generation of tech talent. Our apprenticeship program not only
+                equips students with practical skills and experience but also
+                ensures that our clients receive the best possible digital
+                solutions. Together, we are building a future where small
+                businesses can thrive and where new tech talent can flourish.
               </div>
             </Col>
           </Row>
