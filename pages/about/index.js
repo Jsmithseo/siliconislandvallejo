@@ -29,8 +29,6 @@ const headlineStyle = {
 
 const bioContentStyle = {
   padding: '20px',
-  borderRadius: '5px',
-  boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
   textAlign: 'center', // Center text
 };
 
@@ -41,7 +39,7 @@ export default function About() {
         <Container>
           <Row>
             <Col md="12">
-              <div style={headlineStyle}>Contact Our Team.</div>
+              <div style={headlineStyle}>Our Story</div>
             </Col>
             <Col md="12">
               <div style={bioContentStyle}>
