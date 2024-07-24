@@ -52,8 +52,7 @@ export default function Index() {
             <br></br>
             <br></br>
             <div style={copy}>
-              Our proven marketing strategies and innovative tools are designed
-              to help you stand out in the competitive market.
+            At Onyx Creative Labs, we provide cutting-edge technology solutions to small businesses, while nurturing and developing future tech talent.
             </div>
             <br></br>
             <div style={buttonContainer}>
