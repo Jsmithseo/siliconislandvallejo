@@ -5,7 +5,6 @@ import BaseLayout from '../components/layouts/BaseLayouts';
 
 const MainStyle = {
   overflowX: 'hidden',
-  backgroundColor: '#000', // Make the entire page black
   color: '#fff', // White text color for contrast
   minHeight: '100vh', // Ensure it takes the full viewport height
   display: 'flex',
@@ -46,20 +45,30 @@ export default function About() {
             </Col>
             <Col md="12">
               <div style={bioContentStyle}>
-                After nearly 15 years of working in the market as a web
-                developer and marketer, I have learned cutting-edge techniques
-                and strategies by working with some of the best companies in the
-                world. My efforts in optimizing websites and web apps for
-                conversion and better user experience have helped the companies
-                I worked for achieve growth of up to 3-4 times. I have always
-                wanted to work with small companies and non-profits, offering
-                them leading-edge expertise to scale their businesses. I figured
-                that if these strategies could work with industry leaders, they
-                could also help the “little guys.” That's why I formed Onyx
-                Creative Labs, a digital marketing company aimed at helping
-                small businesses grow and scale. By offering services like the
-                development of progressive web apps and A/B testing, I have
-                helped my clients become big fish in a small pond.
+                At Onyx Creative Labs, we combine cutting-edge technology with
+                the development of future tech talent. Our journey began with
+                nearly 15 years of experience in web development and marketing,
+                during which we honed our skills with some of the world’s
+                leading companies. This experience taught us advanced techniques
+                and strategies that led to significant growth—up to 3-4 times—by
+                optimizing websites and web apps for conversion and user
+                experience. With a passion for supporting small businesses and
+                non-profits, we saw an opportunity to bring our expertise to
+                those who need it most. We believe that if these strategies can
+                propel industry leaders, they can also empower the "little guys"
+                to achieve remarkable growth. That's why we founded Onyx
+                Creative Labs. Our unique approach involves building
+                high-quality websites and web apps through our apprenticeship
+                program. Talented developers in our program work on these
+                projects, and their code is meticulously reviewed by mentors to
+                ensure top-notch results. This process not only delivers
+                exceptional value to our clients but also provides students with
+                invaluable real-world experience. For our clients, this means
+                receiving expertly crafted websites and web apps at a fraction
+                of the typical cost. For our students, it means gaining hands-on
+                experience while contributing to meaningful projects. Through
+                our work, we aim to help small businesses grow and thrive,
+                making a significant impact in their respective fields.
               </div>
             </Col>
           </Row>

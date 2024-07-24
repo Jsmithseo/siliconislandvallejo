@@ -9,14 +9,24 @@ const clientLogos = [
 
 function ClientLogos() {
   return (
-    <Container maxWidth="lg" style={{ marginTop: '40px', marginBottom: '40px' }}>
+    <Container
+      maxWidth="lg"
+      style={{ marginTop: '40px', marginBottom: '40px' }}
+    >
       <Typography variant="h4" align="center" gutterBottom>
         Our Clients
       </Typography>
       <Grid container spacing={4}>
         {clientLogos.map((client, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', padding: '20px' }}>
+            <Card
+              style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                padding: '20px',
+              }}
+            >
               <CardMedia
                 component="img"
                 image={client.image}

@@ -9,7 +9,6 @@ import BaseLayout from './components/layouts/BaseLayouts.js';
 import HowWeWork from './components/HowWework';
 import ExampleWork from './components/ExampleWork';
 
-
 export default function Index() {
   const MainStyle = {
     overflowX: 'hidden',
@@ -52,7 +51,9 @@ export default function Index() {
             <br></br>
             <br></br>
             <div style={copy}>
-            At Onyx Creative Labs, we provide cutting-edge technology solutions to small businesses, while nurturing and developing future tech talent.
+              At Onyx Creative Labs, we provide cutting-edge technology
+              solutions to small businesses, while nurturing and developing
+              future tech talent.
             </div>
             <br></br>
             <div style={buttonContainer}>
@@ -71,8 +72,8 @@ export default function Index() {
             <br></br>
             <br></br>
             <br></br>
-            <HowWeWork/>
-            <ExampleWork/>
+            <HowWeWork />
+            <ExampleWork />
           </Container>
         </React.Fragment>
         <div></div>
