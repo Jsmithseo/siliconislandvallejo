@@ -8,6 +8,8 @@ import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import HowWeWork from './components/HowWework';
 import ExampleWork from './components/ExampleWork';
+import DonationFormWrapper from './components/DonationForm';
+
 
 export default function Index() {
   const MainStyle = {
@@ -73,6 +75,7 @@ export default function Index() {
             <br></br>
             <br></br>
             <HowWeWork />
+            <DonationFormWrapper/>
             <ExampleWork />
           </Container>
         </React.Fragment>
