@@ -12,7 +12,6 @@ export default async (req, res) => {
       const paymentIntent = await stripe.paymentIntents.create({
         amount: amountInCents,
         currency: 'usd',
-        // You can add metadata or other options here as needed
         metadata: { isMonthly },
       });
 
