@@ -8,23 +8,19 @@ import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import HowWeWork from './components/HowWework';
 import DonationFormWrapper from './components/DonationForm';
-import Footer from './components/Footer'
-
+import Footer from './components/Footer';
 
 export default function Index() {
   const MainStyle = {
     overflowX: 'hidden',
   };
 
-  const companyTitle = {
-    textAlign: 'center',
-    fontFamily: 'avenir',
-  };
-
   const copy = {
     textAlign: 'center',
-    fontSize: '30px',
+    fontSize: '22px',
     fontFamily: 'avenir',
+    margin: '20px 0', // Use margin instead of <br>
+    padding: '0 20px', // Add padding for better spacing on mobile
   };
 
   const buttonContainer = {
@@ -40,27 +36,17 @@ export default function Index() {
         <React.Fragment>
           <CssBaseline />
           <Container maxWidth="lg">
-            <br></br>
-            <br></br>
-            <center>
+            <div style={{ marginTop: '40px', textAlign: 'center' }}>
               <Image
                 src={Logo}
-                alt="Description of Image"
+                alt="Onyx Creative Labs Logo"
                 width={300}
                 height={75}
               />
-            </center>
-            <br></br>
-            <br></br>
+            </div>
             <div style={copy}>
-            At Onyx Creative Labs, we are a full-service digital marketing and development agency specializing in cutting-edge technology solutions for small businesses and nonprofits. We focus on web development, SEO, content marketing, and more, while also nurturing and developing future tech talent.
-
-
-</div>
-
-
-
-            <br></br>
+              At Onyx Creative Labs, we are a full-service digital marketing and development agency specializing in cutting-edge technology solutions for small businesses and nonprofits. We focus on web development, SEO, content marketing, and more, while also nurturing and developing future tech talent.
+            </div>
             <div style={buttonContainer}>
               <Link href="/contact">
                 <Button variant="contained" color="primary" type="submit">
@@ -73,15 +59,14 @@ export default function Index() {
                 </Button>
               </Link>
             </div>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
-            <HowWeWork />
-            <DonationFormWrapper/>
-        
+            <div style={{ marginTop: '60px' }}>
+              <HowWeWork />
+            </div>
+            <div style={{ marginTop: '60px' }}>
+              <DonationFormWrapper />
+            </div>
           </Container>
-          <Footer/>
+          <Footer />
         </React.Fragment>
       </div>
     </BaseLayout>
