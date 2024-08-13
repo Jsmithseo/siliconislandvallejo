@@ -13,8 +13,9 @@ const Footer = () => {
             </p>
           </Col>
           <Col md="4">
-            <h5>Social</h5>
+            <h5>Quick Links</h5>
             <ul className="list-unstyled">
+            <li><a href="/laptop-donation" className="text-white">Laptop Donation</a></li>
               <li><a href="https://www.linkedin.com/in/jeremy-smith-120115266/" className="text-white">Linkedin</a></li>
               <li><a href="/" className="text-white">Facebook</a></li>
               <li><a href="https://www.instagram.com/onyxcreativelabs/?locale=de&hl=am-et" className="text-white">Instagram</a></li>
