@@ -8,6 +8,7 @@ import Link from 'next/link';
 import BaseLayout from './components/layouts/BaseLayouts.js';
 import HowWeWork from './components/HowWework';
 import DonationFormWrapper from './components/DonationForm';
+import Footer from './components/Footer'
 
 
 export default function Index() {
@@ -52,10 +53,13 @@ export default function Index() {
             <br></br>
             <br></br>
             <div style={copy}>
-              At Onyx Creative Labs, we provide cutting-edge technology
-              solutions to small businesses, while nurturing and developing
-              future tech talent.
-            </div>
+            At Onyx Creative Labs, we are a full-service digital marketing and development agency specializing in cutting-edge technology solutions for small businesses and nonprofits. We focus on web development, SEO, content marketing, and more, while also nurturing and developing future tech talent.
+
+
+</div>
+
+
+
             <br></br>
             <div style={buttonContainer}>
               <Link href="/contact">
@@ -77,8 +81,8 @@ export default function Index() {
             <DonationFormWrapper/>
         
           </Container>
+          <Footer/>
         </React.Fragment>
-        <div></div>
       </div>
     </BaseLayout>
   );
