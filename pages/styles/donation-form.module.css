@@ -53,3 +53,9 @@ button[type="submit"] {
   text-align: center;
   margin-bottom: 20px;
 }
+
+
+
+a.nav-link {
+  color: #ffffff!important;
+}

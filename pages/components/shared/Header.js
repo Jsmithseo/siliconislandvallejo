@@ -19,28 +19,20 @@ const MyHeader = () => {
   };
 
   return (
-    <Navbar color="light" light expand="md">
+    <Navbar color="dark" dark expand="md">
       <NavbarToggler onClick={toggle} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
           <NavItem>
-            <NavLink href="/#">
+            <NavLink href="/#" className="text-white">
               <span className="brandName">Onyx Creative Labs</span>
             </NavLink>
           </NavItem>
-          {/* <NavItem>
-            <NavLink href="/playbook">Case Studies</NavLink>
-          </NavItem> */}
           <NavItem>
-            <NavLink href="/about">Our Story</NavLink>
+            <NavLink href="/about" className="text-white">
+              Our Story
+            </NavLink>
           </NavItem>
-
-          {/*<NavItem>
-            <NavLink href="/Lessons">Case Studies</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="/contact">Contact</NavLink>
-          </NavItem> */}
         </Nav>
       </Collapse>
     </Navbar>
