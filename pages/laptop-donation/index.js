@@ -94,7 +94,7 @@ const LaptopDonationPage = () => {
               Please note: We are only accepting Apple MacBook Pro models from 2015 or newer.
             </p>
             <p className="text-center">
-              **Tax Information: Onyx Creative Labs is a 501(c)(3) nonprofit organization. Our Tax ID is 12-3456789.**
+              **Tax Information: Onyx Creative Labs is a 501(c)(3) nonprofit organization. Our Tax ID is 99-4403186.**
             </p>
 
             {submitted ? (
