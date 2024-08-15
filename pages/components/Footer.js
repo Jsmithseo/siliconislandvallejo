@@ -3,21 +3,22 @@ import { Container, Row, Col } from 'reactstrap';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4">
+    <footer className="bg-dark text-white py-4" style={{ paddingTop: '10px' }}>
       <Container>
         <Row>
           <Col md="4">
             <h5>About Onyx Creative Labs</h5>
             <p>
-            Onyx Creative Labs is a full-service digital marketing and development agency focused on delivering customized solutions for businesses of all sizes. We specialize in web development, SEO, content marketing, and more.
+              Onyx Creative Labs is a full-service digital marketing and development agency focused on delivering customized solutions for businesses of all sizes. We specialize in web development, SEO, content marketing, and more.
             </p>
           </Col>
           <Col md="4">
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
-            <li><a href="/laptop-donation" className="text-white">Laptop Donation</a></li>
+            <li><a href="/apprenticeship" className="text-white">Apprenticeship Program</a></li>
+              <li><a href="/laptop-donation" className="text-white">Laptop Donation</a></li>
               <li><a href="https://www.linkedin.com/in/jeremy-smith-120115266/" className="text-white">Linkedin</a></li>
-              <li><a href="/" className="text-white">Facebook</a></li>
+             
               <li><a href="https://www.instagram.com/onyxcreativelabs/?locale=de&hl=am-et" className="text-white">Instagram</a></li>
             </ul>
           </Col>
