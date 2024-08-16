@@ -84,19 +84,15 @@ export default function Index() {
                         Empower the Next Generation of Tech Talent
                       </h1>
                       <p style={styles.text}>
-                        At Onyx Creative Labs, we are committed to providing
-                        aspiring developers with the skills and experience they
-                        need to succeed in the tech industry. Join us in our
-                        mission to support future innovators by contributing to
-                        our apprenticeship programs.
+                      What sets us apart is our unique approach to talent development. Your projects will be handled by our talented students, who work under the guidance of an experienced senior developer acting as a mentor. This ensures that your website or app is not only expertly crafted but also continually maintained with the latest industry practices.
                       </p>
                       <Button
                         color="success"
                         size="lg"
                         style={styles.button}
-                        href="/donate"
+                        href="/contact"
                       >
-                        Donate
+                        Start Project
                       </Button>
                       <br></br>
                       <br></br>
