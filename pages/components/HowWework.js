@@ -81,7 +81,7 @@ function HowWeWork() {
 
   return (
     <Container maxWidth="md" style={{ marginTop: '40px' }}>
-      <Typography variant="h4" align="center" gutterBottom>
+      <Typography variant="h4" align="center" gutterBottom  style={styles.header}>
         How We Work
       </Typography>
       <Tabs value={selectedTab} onChange={handleChange} centered>
@@ -104,4 +104,23 @@ function HowWeWork() {
   );
 }
 
+
+const styles = {
+  heroSection: {
+    padding: '100px 0',
+    backgroundColor: '#f8f9fa',
+  },
+  header: {
+    fontSize: '2.5rem',
+    marginBottom: '20px',
+    fontWeight: 'bold',
+  },
+  text: {
+    fontSize: '1.2rem',
+    marginBottom: '30px',
+  },
+  button: {
+    padding: '10px 20px',
+  },
+};
 export default HowWeWork;
