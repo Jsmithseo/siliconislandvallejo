@@ -76,13 +76,13 @@ export default function Index() {
                 <Container>
                   <Row>
                     <Col
-                      md={{ size: 8, offset: 2 }}
+                      md={{ size: 12 }}
                       className="text-center"
                       style={styles.content}
                     >
-                      <h1 style={styles.header}>
+                      {/* <h1 style={styles.header}>
                         Empower the Next Generation of Tech Talent
-                      </h1>
+                      </h1> */}
                       <p style={styles.text}>
                       What sets us apart is our unique approach to talent development. Your projects will be handled by our talented students, who work under the guidance of an experienced senior developer acting as a mentor. This ensures that your website or app is not only expertly crafted but also continually maintained with the latest industry practices.
                       </p>
