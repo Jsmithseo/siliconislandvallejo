@@ -92,6 +92,10 @@ const CaseStudyPage = () => {
         ))}
       </Row>
     </Container>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     </BaseLayout>
   );
 };
