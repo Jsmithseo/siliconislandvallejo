@@ -46,11 +46,7 @@ export default function Index() {
                 />
               </div>
               <div style={copy}>
-                At Onyx Creative Labs, we are a full-service digital marketing
-                and development agency specializing in cutting-edge technology
-                solutions for small businesses and nonprofits. We focus on web
-                development, SEO, content marketing, and more, while also
-                nurturing and developing future tech talent.
+              At Onyx Creative Labs, we’re a full-service digital marketing and development agency dedicated to delivering innovative technology solutions for small businesses and nonprofits. We specialize in web development, SEO, and content marketing, all while nurturing the next generation of tech talent through hands-on experience and mentorship.
               </div>
               <div style={buttonContainer}>
                 <Link href="/contact">
