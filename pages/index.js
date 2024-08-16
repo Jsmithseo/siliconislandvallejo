@@ -91,7 +91,7 @@ export default function Index() {
                         our apprenticeship programs.
                       </p>
                       <Button
-                        color="primary"
+                        color="success"
                         size="lg"
                         style={styles.button}
                         href="/donate"
