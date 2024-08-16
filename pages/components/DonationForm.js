@@ -61,7 +61,6 @@ const DonationForm = () => {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.header}>Help Us Scale</h1>
       <Form onSubmit={handleSubmit} style={styles.form}>
         <FormGroup style={styles.formGroup}>
           <Label for="donationAmount">Choose an amount:</Label>

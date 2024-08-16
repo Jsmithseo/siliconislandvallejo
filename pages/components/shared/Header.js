@@ -33,6 +33,11 @@ const MyHeader = () => {
               Our Story
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink href="/donate" className="text-white">
+              Donate
+            </NavLink>
+          </NavItem>
         </Nav>
       </Collapse>
     </Navbar>
