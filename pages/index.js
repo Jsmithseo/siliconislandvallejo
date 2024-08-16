@@ -54,7 +54,7 @@ export default function Index() {
               </div>
               <div style={buttonContainer}>
                 <Link href="/contact">
-                  <Button variant="contained" color="primary" type="submit">
+                  <Button variant="contained" color="success" type="submit">
                     Start Project
                   </Button>
                 </Link>
