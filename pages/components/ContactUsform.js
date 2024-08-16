@@ -207,57 +207,57 @@ const ContactForm = () => {
             <div style={styles.radioOption}>
               <input
                 type="radio"
-                id="budget-low"
+                id="budget-2500-5000"
                 name="budget"
-                value="Ongoing Support"
-                checked={formData.budget === 'Ongoing Support'}
+                value="2500-5000"
+                checked={formData.budget === '2500-5000'}
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-low" style={styles.radioLabel}>
-                Ongoing Support (Custom Quote)
+              <label htmlFor="budget-2500-5000" style={styles.radioLabel}>
+                $2,500 - $5,000
               </label>
             </div>
             <div style={styles.radioOption}>
               <input
                 type="radio"
-                id="budget-low-5000-30000"
+                id="budget-10000-30000"
                 name="budget"
-                value="5000-30000"
-                checked={formData.budget === '5000-30000'}
+                value="10000-30000"
+                checked={formData.budget === '10000-30000'}
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-low-5000-30000" style={styles.radioLabel}>
-                Up to $10,000
+              <label htmlFor="budget-10000-30000" style={styles.radioLabel}>
+                $10,000 - $30,000
               </label>
             </div>
             <div style={styles.radioOption}>
               <input
                 type="radio"
-                id="budget-medium"
+                id="budget-30000plus"
                 name="budget"
-                value="40000-80000"
-                checked={formData.budget === '40000-80000'}
+                value="30000plus"
+                checked={formData.budget === '30000plus'}
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-medium" style={styles.radioLabel}>
-                $10,000 - $50,000
+              <label htmlFor="budget-30000plus" style={styles.radioLabel}>
+                $30,000+
               </label>
             </div>
             <div style={styles.radioOption}>
               <input
                 type="radio"
-                id="budget-high"
+                id="budget-custom"
                 name="budget"
-                value="80000+"
-                checked={formData.budget === '80000+'}
+                value="Custom"
+                checked={formData.budget === 'Custom'}
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-high" style={styles.radioLabel}>
-                $50,000+{' '}
+              <label htmlFor="budget-custom" style={styles.radioLabel}>
+                Custom Amount
               </label>
             </div>
           </div>
