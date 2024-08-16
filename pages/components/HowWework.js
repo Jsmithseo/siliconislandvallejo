@@ -81,7 +81,12 @@ function HowWeWork() {
 
   return (
     <Container maxWidth="md" style={{ marginTop: '40px' }}>
-      <Typography variant="h4" align="center" gutterBottom  style={styles.header}>
+      <Typography
+        variant="h4"
+        align="center"
+        gutterBottom
+        style={styles.header}
+      >
         How We Work
       </Typography>
       <Tabs value={selectedTab} onChange={handleChange} centered>
@@ -103,7 +108,6 @@ function HowWeWork() {
     </Container>
   );
 }
-
 
 const styles = {
   heroSection: {

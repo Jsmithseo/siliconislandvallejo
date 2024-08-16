@@ -9,10 +9,8 @@ const BaseLayout = (props) => {
       <main className={`cover ${className}`}>
         <div className="wrapper">{children}</div>
       </main>
-      <Footer/>
+      <Footer />
     </div>
-   
-
   );
 };
 

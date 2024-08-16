@@ -24,11 +24,11 @@ button:last-child {
   margin-right: 0;
 }
 
-input[type="number"] {
+input[type='number'] {
   margin-top: 10px;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   margin-right: 10px;
 }
 
@@ -44,7 +44,7 @@ input[type="checkbox"] {
   margin: 5px;
 }
 
-button[type="submit"] {
+button[type='submit'] {
   width: 100%;
 }
 
@@ -54,8 +54,6 @@ button[type="submit"] {
   margin-bottom: 20px;
 }
 
-
-
 a.nav-link {
-  color: #ffffff!important;
+  color: #ffffff !important;
 }

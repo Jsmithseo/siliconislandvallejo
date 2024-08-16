@@ -1,6 +1,16 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
-import { Container, Row, Col, Form, FormGroup, Label, Input, Button, Alert } from 'reactstrap';
+import {
+  Container,
+  Row,
+  Col,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button,
+  Alert,
+} from 'reactstrap';
 import BaseLayout from '../components/layouts/BaseLayouts';
 import axios from 'axios';
 
@@ -9,9 +19,9 @@ const LaptopDonationPage = () => {
     name: '',
     email: '',
     phone: '',
-    companyName: '', 
-    numberOfLaptops: '', 
-    laptopDetails: [], 
+    companyName: '',
+    numberOfLaptops: '',
+    laptopDetails: [],
     address: '',
     comments: '',
   });
@@ -41,12 +51,16 @@ const LaptopDonationPage = () => {
       laptopYear: '',
       laptopCondition: '',
     }));
-    setFormData({ ...formData, numberOfLaptops: value, laptopDetails: newLaptopDetails });
+    setFormData({
+      ...formData,
+      numberOfLaptops: value,
+      laptopDetails: newLaptopDetails,
+    });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     const hubspotFormData = {
       fields: [
         { name: 'name', value: formData.name },
@@ -60,7 +74,10 @@ const LaptopDonationPage = () => {
         ...formData.laptopDetails.flatMap((laptop, index) => [
           { name: `laptop_${index + 1}_model`, value: laptop.laptopModel },
           { name: `laptop_${index + 1}_year`, value: laptop.laptopYear },
-          { name: `laptop_${index + 1}_condition`, value: laptop.laptopCondition },
+          {
+            name: `laptop_${index + 1}_condition`,
+            value: laptop.laptopCondition,
+          },
         ]),
       ],
     };
@@ -88,18 +105,25 @@ const LaptopDonationPage = () => {
           <Col md="8" className="mx-auto">
             <h2 className="text-center">Donate Your MacBook Pro</h2>
             <p className="text-center">
-              Your generous donation will go directly to helping students in our apprenticeship program. Each donated laptop will be maintained by our IT volunteer, ensuring it is ready for development work. All donations are tax-deductible. Below you will find the necessary information to claim your deduction.
+              Your generous donation will go directly to helping students in our
+              apprenticeship program. Each donated laptop will be maintained by
+              our IT volunteer, ensuring it is ready for development work. All
+              donations are tax-deductible. Below you will find the necessary
+              information to claim your deduction.
             </p>
             <p className="text-center font-weight-bold">
-              Please note: We are only accepting Apple MacBook Pro models from 2015 or newer.
+              Please note: We are only accepting Apple MacBook Pro models from
+              2015 or newer.
             </p>
             <p className="text-center">
-              **Tax Information: Onyx Creative Labs is a 501(c)(3) nonprofit organization. Our Tax ID is 99-4403186.**
+              **Tax Information: Onyx Creative Labs is a 501(c)(3) nonprofit
+              organization. Our Tax ID is 99-4403186.**
             </p>
 
             {submitted ? (
               <Alert color="success" className="text-center">
-                Thank you for your donation! We will get in touch with you shortly.
+                Thank you for your donation! We will get in touch with you
+                shortly.
               </Alert>
             ) : (
               <Form onSubmit={handleSubmit}>
@@ -198,7 +222,9 @@ const LaptopDonationPage = () => {
                     </FormGroup>
 
                     <FormGroup>
-                      <Label for={`laptopCondition${index}`}>Laptop Condition</Label>
+                      <Label for={`laptopCondition${index}`}>
+                        Laptop Condition
+                      </Label>
                       <Input
                         type="select"
                         name="laptopCondition"
@@ -207,7 +233,9 @@ const LaptopDonationPage = () => {
                         onChange={(e) => handleLaptopDetailsChange(index, e)}
                         required
                       >
-                        <option value="" disabled>Select Condition</option>
+                        <option value="" disabled>
+                          Select Condition
+                        </option>
                         <option value="Excellent">Excellent</option>
                         <option value="Good">Good</option>
                         <option value="Fair">Fair</option>

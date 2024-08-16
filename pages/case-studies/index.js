@@ -54,48 +54,54 @@ const caseStudies = [
     ],
     link: '/case-studies/wordpress-to-nextjs', // Detailed case study page
   },
-
 ];
 
 const CaseStudyPage = () => {
   return (
     <BaseLayout>
-    <Container className="my-5">
-      <Row className="mb-4">
-        <Col>
-          <h1 className="text-center">Case Studies</h1>
-          <p className="text-center">
-            Discover how Onyx Creative Labs has helped businesses and non-profits achieve their goals with our tailored digital solutions.
-          </p>
-        </Col>
-      </Row>
-
-      <Row>
-        {caseStudies.map((caseStudy, index) => (
-          <Col md="6" lg="4" className="mb-4" key={index}>
-            <Card>
-              <CardImg top width="100%" src={caseStudy.image} alt={caseStudy.title} />
-              <CardBody>
-                <CardTitle tag="h5">{caseStudy.title}</CardTitle>
-                <CardText>{caseStudy.description}</CardText>
-                <ul>
-                  {caseStudy.keyResults.map((result, idx) => (
-                    <li key={idx}>{result}</li>
-                  ))}
-                </ul>
-                <Button color="primary" href={caseStudy.link}>
-                  Read More
-                </Button>
-              </CardBody>
-            </Card>
+      <Container className="my-5">
+        <Row className="mb-4">
+          <Col>
+            <h1 className="text-center">Case Studies</h1>
+            <p className="text-center">
+              Discover how Onyx Creative Labs has helped businesses and
+              non-profits achieve their goals with our tailored digital
+              solutions.
+            </p>
           </Col>
-        ))}
-      </Row>
-    </Container>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
+        </Row>
+
+        <Row>
+          {caseStudies.map((caseStudy, index) => (
+            <Col md="6" lg="4" className="mb-4" key={index}>
+              <Card>
+                <CardImg
+                  top
+                  width="100%"
+                  src={caseStudy.image}
+                  alt={caseStudy.title}
+                />
+                <CardBody>
+                  <CardTitle tag="h5">{caseStudy.title}</CardTitle>
+                  <CardText>{caseStudy.description}</CardText>
+                  <ul>
+                    {caseStudy.keyResults.map((result, idx) => (
+                      <li key={idx}>{result}</li>
+                    ))}
+                  </ul>
+                  <Button color="primary" href={caseStudy.link}>
+                    Read More
+                  </Button>
+                </CardBody>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </BaseLayout>
   );
 };

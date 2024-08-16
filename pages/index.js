@@ -46,7 +46,11 @@ export default function Index() {
                 />
               </div>
               <div style={copy}>
-                At Onyx Creative Labs, we are a full-service digital marketing and development agency specializing in cutting-edge technology solutions for small businesses and nonprofits. We focus on web development, SEO, content marketing, and more, while also nurturing and developing future tech talent.
+                At Onyx Creative Labs, we are a full-service digital marketing
+                and development agency specializing in cutting-edge technology
+                solutions for small businesses and nonprofits. We focus on web
+                development, SEO, content marketing, and more, while also
+                nurturing and developing future tech talent.
               </div>
               <div style={buttonContainer}>
                 <Link href="/contact">
@@ -71,14 +75,27 @@ export default function Index() {
               <div style={styles.background}>
                 <Container>
                   <Row>
-                    <Col md={{ size: 8, offset: 2 }} className="text-center" style={styles.content}>
-                      <h1 style={styles.header}>Empower the Next Generation of Tech Talent</h1>
+                    <Col
+                      md={{ size: 8, offset: 2 }}
+                      className="text-center"
+                      style={styles.content}
+                    >
+                      <h1 style={styles.header}>
+                        Empower the Next Generation of Tech Talent
+                      </h1>
                       <p style={styles.text}>
-                        At Onyx Creative Labs, we are committed to providing aspiring developers with the skills
-                        and experience they need to succeed in the tech industry. Join us in our mission to
-                        support future innovators by contributing to our apprenticeship programs.
+                        At Onyx Creative Labs, we are committed to providing
+                        aspiring developers with the skills and experience they
+                        need to succeed in the tech industry. Join us in our
+                        mission to support future innovators by contributing to
+                        our apprenticeship programs.
                       </p>
-                      <Button color="primary" size="lg" style={styles.button} href="/donate">
+                      <Button
+                        color="primary"
+                        size="lg"
+                        style={styles.button}
+                        href="/donate"
+                      >
                         Donate
                       </Button>
                       <br></br>
@@ -125,4 +142,3 @@ const styles = {
     padding: '10px 20px',
   },
 };
-

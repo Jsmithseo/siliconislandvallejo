@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import { Button, ButtonGroup, Input, Form, FormGroup, Label } from 'reactstrap';
 import { loadStripe } from '@stripe/stripe-js';
-import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
+import {
+  Elements,
+  CardElement,
+  useStripe,
+  useElements,
+} from '@stripe/react-stripe-js';
 import axios from 'axios';
 
 // Ensure the environment variable is accessed correctly
-const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+const stripePromise = loadStripe(
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY
+);
 
 const DonationForm = () => {
   const [amount, setAmount] = useState(null);
@@ -78,7 +85,9 @@ const DonationForm = () => {
             <Button
               onClick={() => handleAmountChange(null)}
               active={!amount && !customAmount}
-              style={!amount && !customAmount ? styles.selectedButton : styles.button}
+              style={
+                !amount && !customAmount ? styles.selectedButton : styles.button
+              }
             >
               Custom
             </Button>
@@ -110,7 +119,12 @@ const DonationForm = () => {
             <CardElement id="cardDetails" />
           </div>
         </FormGroup>
-        <Button type="submit" color="primary" disabled={!stripe} style={styles.submitButton}>
+        <Button
+          type="submit"
+          color="primary"
+          disabled={!stripe}
+          style={styles.submitButton}
+        >
           Donate
         </Button>
       </Form>

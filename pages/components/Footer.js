@@ -18,8 +18,7 @@ const Footer = () => {
             <li><a href="/apprenticeship" className="text-white">Apprenticeship Program</a></li>
               <li><a href="/laptop-donation" className="text-white">Laptop Donation</a></li>
               <li><a href="/community" className="text-white">Join Slack Community</a></li>
-             
-              <li><a href="https://www.instagram.com/onyxcreativelabs/?locale=de&hl=am-et" className="text-white">Instagram</a></li>
+              <li><a href="/tax-form" className="text-white">Request Tax Information</a></li>             
             </ul>
           </Col>
           <Col md="4">
