@@ -16,6 +16,7 @@ const Footer = () => {
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
             <li><a href="/apprenticeship" className="text-white">Apprenticeship Program</a></li>
+            <li><a href="/donate" className="text-white">Donate</a></li>
               <li><a href="/laptop-donation" className="text-white">Laptop Donation</a></li>
               <li><a href="/community" className="text-white">Join Slack Community</a></li>
               <li><a href="/tax-form" className="text-white">Request Tax Information</a></li>             
