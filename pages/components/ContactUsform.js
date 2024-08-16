@@ -6,8 +6,10 @@ const ContactForm = () => {
     firstName: '',
     lastName: '',
     email: '',
+    companyName: '',
     description: '',
     budget: '',
+    serviceType: '', // New field for service type
   });
 
   const handleChange = (e) => {
@@ -29,8 +31,10 @@ const ContactForm = () => {
         { name: 'firstname', value: formData.firstName },
         { name: 'lastname', value: formData.lastName },
         { name: 'email', value: formData.email },
+        { name: 'company', value: formData.companyName },
         { name: 'description', value: formData.description },
         { name: 'budget', value: formData.budget },
+        { name: 'service_type', value: formData.serviceType }, // Added service type to payload
       ],
     };
 
@@ -50,10 +54,11 @@ const ContactForm = () => {
   return (
     <div
       style={{
-        background: '#000',
-        padding: '20px',
-        borderRadius: '5px',
-        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+        background: '#f8f9fa', // Light gray background to match the page
+        padding: '30px',
+        borderRadius: '8px',
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+        color: '#000', // Black text color for readability
       }}
     >
       <form onSubmit={handleSubmit}>
@@ -61,7 +66,7 @@ const ContactForm = () => {
           style={{
             display: 'flex',
             justifyContent: 'space-between',
-            marginBottom: '15px',
+            marginBottom: '20px',
           }}
         >
           <div style={{ flex: '1', marginRight: '10px' }}>
@@ -69,16 +74,7 @@ const ContactForm = () => {
               type="text"
               id="firstName"
               name="firstName"
-              style={{
-                width: '100%',
-                padding: '10px',
-                border: '1px solid #ddd',
-                borderRadius: '5px',
-                fontSize: '14px',
-                backgroundColor: '#24252B',
-                color: '#fff',
-                marginBottom: '10px',
-              }}
+              style={styles.input}
               placeholder="First Name"
               value={formData.firstName}
               onChange={handleChange}
@@ -90,16 +86,7 @@ const ContactForm = () => {
               type="text"
               id="lastName"
               name="lastName"
-              style={{
-                width: '100%',
-                padding: '10px',
-                border: '1px solid #ddd',
-                borderRadius: '5px',
-                fontSize: '14px',
-                backgroundColor: '#24252B',
-                color: '#fff',
-                marginBottom: '10px',
-              }}
+              style={styles.input}
               placeholder="Last Name"
               value={formData.lastName}
               onChange={handleChange}
@@ -107,57 +94,105 @@ const ContactForm = () => {
             />
           </div>
         </div>
-        <div style={{ marginBottom: '15px' }}>
+        <div style={{ marginBottom: '20px' }}>
           <input
             type="email"
             id="email"
             name="email"
-            style={{
-              width: '100%',
-              padding: '10px',
-              border: '1px solid #ddd',
-              borderRadius: '5px',
-              fontSize: '14px',
-              backgroundColor: '#24252B',
-              color: '#fff',
-              marginBottom: '10px',
-            }}
+            style={styles.input}
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
           />
         </div>
-        <div style={{ marginBottom: '15px' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <input
+            type="text"
+            id="companyName"
+            name="companyName"
+            style={styles.input}
+            placeholder="Company or Business Name (Optional)"
+            value={formData.companyName}
+            onChange={handleChange}
+          />
+        </div>
+        <div style={{ marginBottom: '20px' }}>
+          <label
+            htmlFor="serviceType"
+            style={{
+              color: '#000',
+              marginBottom: '8px',
+              fontSize: '16px',
+              fontWeight: '600',
+            }}
+          >
+            What Service Are You Interested In?
+          </label>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div style={styles.radioOption}>
+              <input
+                type="radio"
+                id="website"
+                name="serviceType"
+                value="Website"
+                checked={formData.serviceType === 'Website'}
+                onChange={handleChange}
+                required
+              />
+              <label htmlFor="website" style={styles.radioLabel}>
+                Website
+              </label>
+            </div>
+            <div style={styles.radioOption}>
+              <input
+                type="radio"
+                id="webApp"
+                name="serviceType"
+                value="Web App"
+                checked={formData.serviceType === 'Web App'}
+                onChange={handleChange}
+                required
+              />
+              <label htmlFor="webApp" style={styles.radioLabel}>
+                Web App
+              </label>
+            </div>
+            <div style={styles.radioOption}>
+              <input
+                type="radio"
+                id="marketingServices"
+                name="serviceType"
+                value="Marketing Services"
+                checked={formData.serviceType === 'Marketing Services'}
+                onChange={handleChange}
+                required
+              />
+              <label htmlFor="marketingServices" style={styles.radioLabel}>
+                Marketing Services
+              </label>
+            </div>
+          </div>
+        </div>
+        <div style={{ marginBottom: '20px' }}>
           <textarea
             id="description"
             name="description"
-            style={{
-              width: '100%',
-              padding: '10px',
-              border: '1px solid #ddd',
-              borderRadius: '5px',
-              fontSize: '14px',
-              backgroundColor: '#24252B',
-              color: '#fff',
-              height: '100px',
-              resize: 'vertical',
-              marginBottom: '10px',
-            }}
+            style={styles.textarea}
             placeholder="Enter any project specific details..."
             value={formData.description}
             onChange={handleChange}
             required
           ></textarea>
         </div>
-        <div style={{ marginBottom: '15px' }}>
+        <div style={{ marginBottom: '20px' }}>
           <label
             htmlFor="budget"
             style={{
-              color: '#fff',
-              marginBottom: '4px',
-              fontSize: '18px',
-              fontWeight: '500',
+              color: '#000',
+              marginBottom: '8px',
+              fontSize: '16px',
+              fontWeight: '600',
             }}
           >
             Budget Range
@@ -167,22 +202,9 @@ const ContactForm = () => {
               display: 'flex',
               flexWrap: 'wrap',
               gap: '10px',
-              marginBottom: '15px',
             }}
           >
-            <div
-              style={{
-                flex: '1',
-                backgroundColor: '#20222B',
-                color: '#fff',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                textAlign: 'left',
-                display: 'flex',
-                alignItems: 'center',
-                padding: '10px 20px',
-              }}
-            >
+            <div style={styles.radioOption}>
               <input
                 type="radio"
                 id="budget-low"
@@ -192,23 +214,11 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-low" style={{ marginLeft: '10px' }}>
+              <label htmlFor="budget-low" style={styles.radioLabel}>
                 Ongoing Support (Custom Quote)
               </label>
             </div>
-            <div
-              style={{
-                flex: '1',
-                backgroundColor: '#20222B',
-                color: '#fff',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                textAlign: 'left',
-                display: 'flex',
-                alignItems: 'center',
-                padding: '10px 20px',
-              }}
-            >
+            <div style={styles.radioOption}>
               <input
                 type="radio"
                 id="budget-low-5000-30000"
@@ -218,26 +228,11 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label
-                htmlFor="budget-low-5000-30000"
-                style={{ marginLeft: '10px' }}
-              >
+              <label htmlFor="budget-low-5000-30000" style={styles.radioLabel}>
                 Up to $10,000
               </label>
             </div>
-            <div
-              style={{
-                flex: '1',
-                backgroundColor: '#20222B',
-                color: '#fff',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                textAlign: 'left',
-                display: 'flex',
-                alignItems: 'center',
-                padding: '10px 20px',
-              }}
-            >
+            <div style={styles.radioOption}>
               <input
                 type="radio"
                 id="budget-medium"
@@ -247,23 +242,11 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-medium" style={{ marginLeft: '10px' }}>
+              <label htmlFor="budget-medium" style={styles.radioLabel}>
                 $10,000 - $50,000
               </label>
             </div>
-            <div
-              style={{
-                flex: '1',
-                backgroundColor: '#20222B',
-                color: '#fff',
-                borderRadius: '20px',
-                cursor: 'pointer',
-                textAlign: 'left',
-                display: 'flex',
-                alignItems: 'center',
-                padding: '10px 20px',
-              }}
-            >
+            <div style={styles.radioOption}>
               <input
                 type="radio"
                 id="budget-high"
@@ -273,33 +256,74 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label htmlFor="budget-high" style={{ marginLeft: '10px' }}>
+              <label htmlFor="budget-high" style={styles.radioLabel}>
                 $50,000+{' '}
               </label>
             </div>
           </div>
         </div>
-        <button
-          type="submit"
-          style={{
-            padding: '10px 20px',
-            backgroundColor: '#B0000B',
-            color: '#fff',
-            border: 'none',
-            borderRadius: '3px',
-            cursor: 'pointer',
-            fontSize: '16px',
-            textAlign: 'center',
-            textTransform: 'uppercase',
-            whiteSpace: 'nowrap',
-            fontWeight: '500',
-          }}
-        >
-          Start A Project
-        </button>
+        <div style={{ textAlign: 'center' }}>
+          <button
+            type="submit"
+            style={{
+              padding: '12px 20px',
+              backgroundColor: '#0C6DFD',
+              color: '#fff',
+              border: 'none',
+              borderRadius: '5px',
+              cursor: 'pointer',
+              fontSize: '16px',
+              textAlign: 'center',
+              textTransform: 'uppercase',
+              whiteSpace: 'nowrap',
+              fontWeight: '600',
+            }}
+          >
+            Start A Project
+          </button>
+        </div>
       </form>
     </div>
   );
+};
+
+const styles = {
+  input: {
+    width: '100%',
+    padding: '12px',
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+    fontSize: '14px',
+    backgroundColor: '#fff', // White background for inputs
+    color: '#000', // Black text for readability
+  },
+  textarea: {
+    width: '100%',
+    padding: '12px',
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+    fontSize: '14px',
+    backgroundColor: '#fff', // White background for textarea
+    color: '#000', // Black text for readability
+    height: '120px',
+    resize: 'vertical',
+  },
+  radioOption: {
+    flex: '1',
+    backgroundColor: '#e9ecef', // Light gray background for radio buttons
+    color: '#000', // Black text for readability
+    borderRadius: '20px',
+    cursor: 'pointer',
+    textAlign: 'left',
+    display: 'flex',
+    alignItems: 'center',
+    padding: '10px 20px',
+  },
+  radioLabel: {
+    marginLeft: '10px',
+    fontSize: '14px',
+    fontWeight: '500',
+  },
 };
 
 export default ContactForm;
