@@ -17,7 +17,7 @@ const Footer = () => {
             <ul className="list-unstyled">
             <li><a href="/apprenticeship" className="text-white">Apprenticeship Program</a></li>
               <li><a href="/laptop-donation" className="text-white">Laptop Donation</a></li>
-              <li><a href="https://www.linkedin.com/in/jeremy-smith-120115266/" className="text-white">Linkedin</a></li>
+              <li><a href="/community" className="text-white">Join Slack Community</a></li>
              
               <li><a href="https://www.instagram.com/onyxcreativelabs/?locale=de&hl=am-et" className="text-white">Instagram</a></li>
             </ul>

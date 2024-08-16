@@ -1,4 +1,5 @@
 import React from 'react';
+import BaseLayout from '../components/layouts/BaseLayouts';
 import ContactForm from '../components/ContactUsform';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -14,6 +15,7 @@ const Contact = () => {
         justifyContent: 'center',
       }}
     >
+      <BaseLayout>
       <div className="container-fluid" style={{ padding: '20px' }}>
         <div className="row">
           <div className="col-lg-12">
@@ -45,7 +47,9 @@ const Contact = () => {
           <div className="col-lg-6">{/* Other content */}</div>
         </div>
       </div>
+      </BaseLayout>
     </div>
+
   );
 };
 
