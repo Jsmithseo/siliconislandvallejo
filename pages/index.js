@@ -60,7 +60,7 @@ export default function Index() {
                 </Link>
                 <Link href="https://calendly.com/jeremy-onyxcreativelabs/client-discovery">
                   <Button variant="contained" color="primary" type="submit">
-                    30 mins Free consult
+                    30 Min Free Consult
                   </Button>
                 </Link>
               </div>
