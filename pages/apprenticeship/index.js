@@ -86,24 +86,36 @@ const ApprenticeshipForm = () => {
 
   return (
     <BaseLayout>
+      <div style={styles.fullWidthBackground}>
+        <Container>
+          <Row>
+            <Col md={{ size: 8, offset: 2 }}>
+              <div style={styles.grayBackground}>
+                <h1 className="mt-5">Join Our Apprenticeship Program</h1>
+                <p className="lead">
+                  At Onyx Creative Labs, we're dedicated to nurturing the next
+                  generation of tech talent. Our apprenticeship program offers
+                  developers the opportunity to work on real web projects for real
+                  clients, providing hands-on experience that is essential for
+                  building a successful career in technology.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <br></br>
+      <br></br>
       <Container>
         <Row>
           <Col md={{ size: 8, offset: 2 }}>
-            <h1 className="mt-5">Join Our Apprenticeship Program</h1>
-            <p className="lead">
-              At Onyx Creative Labs, we're dedicated to nurturing the next
-              generation of tech talent. Our apprenticeship program offers
-              developers the opportunity to work on real web projects for real
-              clients, providing hands-on experience that is essential for
-              building a successful career in technology.
-            </p>
-
             {submitted ? (
               <p>
                 Thank you for your application! We will get in touch with you
                 soon.
               </p>
             ) : (
+             
               <Form onSubmit={handleSubmit}>
                 <FormGroup>
                   <Label for="fullName">Full Name</Label>
@@ -115,6 +127,7 @@ const ApprenticeshipForm = () => {
                     value={formData.fullName}
                     onChange={handleChange}
                     required
+                    style={styles.input}
                   />
                 </FormGroup>
 
@@ -128,6 +141,7 @@ const ApprenticeshipForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    style={styles.input}
                   />
                 </FormGroup>
 
@@ -141,6 +155,7 @@ const ApprenticeshipForm = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
+                    style={styles.input}
                   />
                 </FormGroup>
 
@@ -153,6 +168,7 @@ const ApprenticeshipForm = () => {
                     placeholder="Enter your LinkedIn profile URL"
                     value={formData.linkedIn}
                     onChange={handleChange}
+                    style={styles.input}
                   />
                 </FormGroup>
 
@@ -167,6 +183,7 @@ const ApprenticeshipForm = () => {
                     value={formData.experienceLevel}
                     onChange={handleChange}
                     required
+                    style={styles.input}
                   >
                     <option value="">Select your experience level</option>
                     <option value="Beginner">Beginner (0-1 year)</option>
@@ -189,6 +206,7 @@ const ApprenticeshipForm = () => {
                     value={formData.projectDescription}
                     onChange={handleChange}
                     required
+                    style={styles.textareaGray}
                   />
                 </FormGroup>
 
@@ -203,6 +221,7 @@ const ApprenticeshipForm = () => {
                     value={formData.timeCommitment}
                     onChange={handleChange}
                     required
+                    style={styles.input}
                   >
                     <option value="">Select your time commitment</option>
                     <option value="Less than 10 hours">
@@ -257,8 +276,11 @@ const ApprenticeshipForm = () => {
                       value={formData.jobFlexibility}
                       onChange={handleChange}
                       required
+                      style={styles.input}
                     >
-                      <option value="">Select your schedule flexibility</option>
+                      <option value="">
+                        Select your schedule flexibility
+                      </option>
                       <option value="Not flexible">Not flexible</option>
                       <option value="Somewhat flexible">
                         Somewhat flexible
@@ -279,6 +301,7 @@ const ApprenticeshipForm = () => {
                     value={formData.motivation}
                     onChange={handleChange}
                     required
+                    style={styles.textareaGray}
                   />
                 </FormGroup>
 
@@ -293,6 +316,7 @@ const ApprenticeshipForm = () => {
                     value={formData.careerGoals}
                     onChange={handleChange}
                     required
+                    style={styles.textareaGray}
                   />
                 </FormGroup>
 
@@ -307,6 +331,7 @@ const ApprenticeshipForm = () => {
                     value={formData.reason}
                     onChange={handleChange}
                     required
+                    style={styles.textareaGray}
                   />
                 </FormGroup>
 
@@ -321,6 +346,7 @@ const ApprenticeshipForm = () => {
                     value={formData.computerType}
                     onChange={handleChange}
                     required
+                    style={styles.input}
                   >
                     <option value="">Select your computer type</option>
                     <option value="Windows Desktop/Laptop">
@@ -347,6 +373,7 @@ const ApprenticeshipForm = () => {
                     value={formData.computerSpecs}
                     onChange={handleChange}
                     required
+                    style={styles.textareaGray}
                   />
                 </FormGroup>
 
@@ -390,6 +417,7 @@ const ApprenticeshipForm = () => {
                     id="additionalInfo"
                     value={formData.additionalInfo}
                     onChange={handleChange}
+                    style={styles.textareaGray}
                   />
                 </FormGroup>
 
@@ -404,6 +432,7 @@ const ApprenticeshipForm = () => {
                     value={formData.referralSource}
                     onChange={handleChange}
                     required
+                    style={styles.input}
                   >
                     <option value="">Select a source</option>
                     <option value="LinkedIn">LinkedIn</option>
@@ -414,7 +443,7 @@ const ApprenticeshipForm = () => {
                   </Input>
                 </FormGroup>
 
-                <Button type="submit" color="primary">
+                <Button type="submit" color="primary" style={styles.button}>
                   Submit Application
                 </Button>
               </Form>
@@ -425,6 +454,52 @@ const ApprenticeshipForm = () => {
       <br></br>
     </BaseLayout>
   );
+};
+
+const styles = {
+  fullWidthBackground: {
+    width: '100%',
+    backgroundColor: '#f0f0f0', // Light gray background
+    padding: '20px 0', // Adjust top and bottom padding
+  },
+  grayBackground: {
+    padding: '20px',
+    borderRadius: '8px',
+    marginBottom: '20px',
+  },
+  input: {
+    width: '100%',
+    padding: '12px',
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+    fontSize: '14px',
+    backgroundColor: '#fff',
+    color: '#000',
+  },
+  textareaGray: {
+    width: '100%',
+    padding: '12px',
+    border: '1px solid #ccc',
+    borderRadius: '5px',
+    fontSize: '14px',
+    backgroundColor: '#f0f0f0', // Light gray background for textareas
+    color: '#000',
+    height: '120px',
+    resize: 'vertical',
+  },
+  button: {
+    width: '100%',
+    padding: '12px 20px',
+    backgroundColor: '#007bff',
+    color: '#fff',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    whiteSpace: 'nowrap',
+  },
 };
 
 export default ApprenticeshipForm;
