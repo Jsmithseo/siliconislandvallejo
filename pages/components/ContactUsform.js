@@ -279,7 +279,7 @@ const ContactForm = () => {
               fontWeight: '600',
             }}
           >
-            Start A Project
+            Enter
           </button>
         </div>
       </form>

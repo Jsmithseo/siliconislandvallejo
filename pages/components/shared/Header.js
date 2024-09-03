@@ -34,6 +34,16 @@ const MyHeader = () => {
             </NavLink>
           </NavItem>
           <NavItem>
+            <NavLink href="/how-it-works" className="text-white">
+              How it Works
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink href="/contact" className="text-white">
+              Start a Project
+            </NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink href="/donate" className="text-white">
               Donate
             </NavLink>
