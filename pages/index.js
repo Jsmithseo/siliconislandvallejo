@@ -96,7 +96,7 @@ export default function Index() {
                 >
                   <h1 style={styles.header}>How It Works</h1>
                   <p style={styles.text}>
-                    At Onyx Creative Labs, we provide high-quality React development services by leveraging the skills of our students who are eager to gain real-world experience. Our unique approach ensures your project is handled with care, expertise, and a fresh perspective.
+                    At Onyx Creative Labs, we provide high-quality marketing and web development services by leveraging the skills of our students who are eager to gain real-world experience. Our unique approach ensures your project is handled with care, expertise, and a fresh perspective.
                   </p>
                   <Button
                     color="success"
