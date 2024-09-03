@@ -69,7 +69,7 @@ export default function Index() {
               />
             </div>
             <p style={{ ...styles.text, padding: '0 20px', margin: '20px 0' }}>
-              We’re a full-service digital marketing and development agency dedicated to delivering innovative technology solutions for small businesses and nonprofits. We specialize in web development, SEO, and content marketing, all while nurturing the next generation of tech talent through hands-on experience and mentorship.
+              We’re a full-service digital marketing agency dedicated to delivering innovative technology solutions for small businesses and nonprofits. We specialize in web development, SEO, and content marketing, all while nurturing the next generation of tech talent through hands-on experience and mentorship.
             </p>
             <div style={styles.buttonContainer}>
               <Link href="/contact">
