@@ -74,7 +74,7 @@ const HowItWorks = () => {
           <Col>
             <h2>Ready to Get Started?</h2>
             <p>
-              Let us handle your React development needs with our unique blend of student innovation and senior expertise. Contact us today to discuss how we can help you achieve your goals.
+              Let us handle your marketing and or web development needs with our unique blend of student innovation and senior expertise. Contact us today to discuss how we can help you achieve your goals.
             </p>
             <Link href="/contact"><Button color="primary" size="lg">Contact Us</Button></Link>
           </Col>
