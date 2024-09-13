@@ -4,6 +4,7 @@ import { Container, Row, Col, Card, CardBody, CardTitle, CardText, Button } from
 
 const PricingPackages = () => {
   return (
+    
     <BaseLayout>
       <Container>
       <br></br>
