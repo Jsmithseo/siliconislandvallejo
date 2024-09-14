@@ -8,15 +8,19 @@ import {
   Button,
   Collapse,
   NavbarToggler,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
 } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MyHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleNavbar = () => setIsOpen(!isOpen);
+  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
   const linkStyle = {
     textDecoration: 'none',
@@ -30,7 +34,7 @@ const MyHeader = () => {
 
   return (
     <Navbar color="dark" dark expand="md">
-      <NavbarToggler onClick={toggle} />
+      <NavbarToggler onClick={toggleNavbar} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
           <NavItem>
@@ -63,7 +67,7 @@ const MyHeader = () => {
               How it Works
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink
               href="/contact"
               style={linkStyle}
@@ -72,6 +76,19 @@ const MyHeader = () => {
             >
               Start a Project
             </NavLink>
+          </NavItem> */}
+
+          {/* Pricing Dropdown */}
+          <NavItem>
+            <Dropdown nav isOpen={dropdownOpen} toggle={toggleDropdown}>
+              <DropdownToggle nav caret style={linkStyle}>
+                Pricing
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem href="/marketing-pricing">Marketing Pricing</DropdownItem>
+                <DropdownItem href="/contact">Start A Web Project</DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
           </NavItem>
           <NavItem>
             <NavLink

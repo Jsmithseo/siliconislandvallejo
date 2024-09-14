@@ -46,9 +46,9 @@ const Contact = () => {
                   boxShadow: '0 0 15px rgba(0, 0, 0, 0.1)', // Lighter shadow for light background
                 }}
               >
-                <h3 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '24px', fontWeight: '600', color: '#000' }}>
+                {/* <h3 style={{ textAlign: 'center', marginBottom: '20px', fontSize: '24px', fontWeight: '600', color: '#000' }}>
                   Contact Us to Get Started
-                </h3>
+                </h3> */}
                 <ContactForm />
               </div>
             </div>
