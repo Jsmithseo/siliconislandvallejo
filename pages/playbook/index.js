@@ -17,7 +17,7 @@ const copyStyle = {
 export default function Playbook() {
   return (
     <BaseLayout>
-      <div className="jumbtron playbook">
+      {/* <div className="jumbtron playbook">
         <center>
           <img
             src="/playbookbanner.png" // Replace with your image path
@@ -25,9 +25,10 @@ export default function Playbook() {
             className="img-fluid playbook"
           />
         </center>
-      </div>
+      </div> */}
       <br></br>
       <br></br>
+      
       <div className="container about">
         <Row>
           {/* <Col md="6">
@@ -91,6 +92,16 @@ export default function Playbook() {
                 />
         </Container> */}
       </div>
+      <br></br>
+      <br></br>   <br></br>
+      <br></br>   <br></br>
+      <br></br>   <br></br>
+      <br></br>   <br></br>
+      <br></br>   <br></br>
+      <br></br>   <br></br>
+      <br></br>   <br></br>
+      <br></br>   <br></br>
+      <br></br>
     </BaseLayout>
   );
 }
