@@ -17,6 +17,7 @@ const copyStyle = {
 export default function Playbook() {
   return (
     <BaseLayout>
+    
       {/* <div className="jumbtron playbook">
         <center>
           <img

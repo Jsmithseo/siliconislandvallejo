@@ -19,7 +19,8 @@ const Footer = () => {
             <li><a href="/donate" className="text-white">Donate</a></li>
               <li><a href="/laptop-donation" className="text-white">Laptop Donation</a></li>
               <li><a href="/community" className="text-white">Join Slack Community</a></li>
-              <li><a href="/tax-form" className="text-white">Request Tax Information</a></li>             
+              <li><a href="/tax-form" className="text-white">Request Tax Information</a></li>  
+              <li><a href="/privacy" className="text-white">Privacy</a></li>             
             </ul>
           </Col>
           <Col md="4">
