@@ -20,7 +20,7 @@ const plans = [
   },
   {
     title: "Growth",
-    price: "299/mo",
+    price: "$299/mo",
     limit: "Up to 200 reviews",
     features: [
       "Everything in Starter",
