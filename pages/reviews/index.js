@@ -9,36 +9,36 @@ import { Container, Row, Col, Card, CardBody, CardTitle, CardText, Button } from
 const plans = [
   {
     title: "Starter",
-    price: "$99/mo",
+    price: "$199/mo",
     limit: "Up to 50 reviews",
     features: [
       "AI-powered text outreach",
       "Smart suggested response templates",
       "Performance tracking dashboard",
     ],
-    link: "/order/starter", // Update when order page is ready
+    link: "https://3zvb63hc.reviewly.ai/subscribe/NzcxMTg1NA==", // Update when order page is ready
   },
   {
     title: "Growth",
-    price: "$199/mo",
+    price: "299/mo",
     limit: "Up to 200 reviews",
     features: [
       "Everything in Starter",
       "Priority support",
       "Custom branding for outreach",
     ],
-    link: "/order/growth",
+    link: "https://3zvb63hc.reviewly.ai/subscribe/NzcxMzIxNw==",
   },
   {
     title: "Unlimited",
-    price: "$299/mo",
+    price: "$499/mo",
     limit: "Unlimited reviews",
     features: [
       "Everything in Growth",
       "Unlimited contact uploads",
       "White glove onboarding",
     ],
-    link: "/order/unlimited",
+    link: "https://3zvb63hc.reviewly.ai/subscribe/NzcxNDU4MA==",
   },
 ];
 
