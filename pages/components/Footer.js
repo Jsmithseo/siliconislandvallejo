@@ -31,10 +31,6 @@ const Footer = () => {
               Phone: 510-925-7174<br />
               Email: Jeremy@onyxcreativelabs.com
             </p>
-            <p>
-              Onyx Creative Labs is a 501(c)(3) nonprofit organization.<br />
-              Tax ID: 99-4403186
-            </p>
           </Col>
         </Row>
         <Row>

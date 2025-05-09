@@ -82,23 +82,12 @@ const MyHeader = () => {
           <NavItem>
             <Dropdown nav isOpen={dropdownOpen} toggle={toggleDropdown}>
               <DropdownToggle nav caret style={linkStyle}>
-                Pricing
+                Products 
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem href="/marketing-pricing">Marketing Pricing</DropdownItem>
-                <DropdownItem href="/contact">Start A Web Project</DropdownItem>
+                <DropdownItem href="/reviews">AI Reviews</DropdownItem>
               </DropdownMenu>
             </Dropdown>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              href="/donate"
-              style={linkStyle}
-              onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
-              onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
-            >
-              Donate
-            </NavLink>
           </NavItem>
         </Nav>
       </Collapse>
