@@ -60,7 +60,7 @@ const Reviews = () => {
 
           {/* Embedded YouTube Short */}
           <div className="text-center mb-5">
-            <div style={{ position: "relative", paddingBottom: "55%", height: 0, overflow: "hidden", maxWidth: "100%" }}>
+            <div style={{ position: "relative", paddingBottom: "60%", height: 0, overflow: "hidden", maxWidth: "100%" }}>
               <iframe
                 src="https://www.youtube.com/embed/J5DXXsBBdjI"
                 title="Onyx Reviews Overview"
