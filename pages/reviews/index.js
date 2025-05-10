@@ -4,7 +4,7 @@ import React from "react";
 import Head from "next/head";
 import Link from "next/link";
 import BaseLayout from "../components/layouts/BaseLayouts";
-import { Container, Row, Col, Card, CardBody, CardTitle, CardText, Button } from "reactstrap";
+import { Container, Row, Col, Card, CardBody, CardTitle, Button } from "reactstrap";
 
 const plans = [
   {
@@ -16,7 +16,7 @@ const plans = [
       "Smart suggested response templates",
       "Performance tracking dashboard",
     ],
-    link: "https://3zvb63hc.reviewly.ai/subscribe/NzcxMTg1NA==", // Update when order page is ready
+    link: "https://3zvb63hc.reviewly.ai/subscribe/NzcxMTg1NA==",
   },
   {
     title: "Growth",
@@ -58,6 +58,27 @@ const Reviews = () => {
             </p>
           </div>
 
+          {/* Embedded YouTube Short */}
+          <div className="text-center mb-5">
+            <div style={{ position: "relative", paddingBottom: "44%", height: 0, overflow: "hidden", maxWidth: "100%" }}>
+              <iframe
+                src="https://www.youtube.com/embed/J5DXXsBBdjI"
+                title="Onyx Reviews Overview"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  border: 0
+                }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+
+          {/* Pricing Plans */}
           <Row className="mb-5">
             {plans.map((plan, idx) => (
               <Col md="4" className="mb-4" key={idx}>
@@ -90,6 +111,7 @@ const Reviews = () => {
             ))}
           </Row>
 
+          {/* Footer Copy */}
           <div className="text-center text-muted" style={{ maxWidth: 800, margin: "0 auto" }}>
             <p>
               Our AI review assistant integrates directly with your business to help you follow up with customers via SMS, using tested messaging sequences and dynamic templates. All you do is upload your contacts — we handle the rest.
