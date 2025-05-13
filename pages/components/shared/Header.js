@@ -44,10 +44,10 @@ const MyHeader = () => {
               onMouseEnter={(e) => (e.currentTarget.style.textDecoration = 'underline')}
               onMouseLeave={(e) => (e.currentTarget.style.textDecoration = 'none')}
             >
-              <span className="brandName">Onyx Creative Labs</span>
+              <span className="brandName">Silicon Island Vallejo</span>
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink
               href="/about"
               style={linkStyle}
@@ -56,8 +56,8 @@ const MyHeader = () => {
             >
               Our Story
             </NavLink>
-          </NavItem>
-          <NavItem>
+          </NavItem> */}
+          {/* <NavItem>
             <NavLink
               href="/how-it-works"
               style={linkStyle}
@@ -66,7 +66,7 @@ const MyHeader = () => {
             >
               How it Works
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           {/* <NavItem>
             <NavLink
               href="/contact"
@@ -79,7 +79,7 @@ const MyHeader = () => {
           </NavItem> */}
 
           {/* Pricing Dropdown */}
-          <NavItem>
+          {/* <NavItem>
             <Dropdown nav isOpen={dropdownOpen} toggle={toggleDropdown}>
               <DropdownToggle nav caret style={linkStyle}>
                 Products 
@@ -88,7 +88,7 @@ const MyHeader = () => {
                 <DropdownItem href="/reviews">AI Reviews</DropdownItem>
               </DropdownMenu>
             </Dropdown>
-          </NavItem>
+          </NavItem> */}
         </Nav>
       </Collapse>
     </Navbar>

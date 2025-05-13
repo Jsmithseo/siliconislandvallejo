@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Logo from '../public/logo.PNG';
+// import Logo from '../public/logo.PNG';
 import CssBaseline from '@mui/material/CssBaseline';
 import Container from '@mui/material/Container';
 import Link from 'next/link';
@@ -21,8 +21,8 @@ export default function Index() {
     backgroundSection: {
       backgroundColor: '#f0f0f0',
       padding: '50px 0',
-      width: '100vw', // Ensures the background spans full width
-      marginLeft: 'calc(-50vw + 50%)', // Centers the full-width background
+      width: '100vw',
+      marginLeft: 'calc(-50vw + 50%)',
     },
     content: {
       padding: '30px',
@@ -61,25 +61,25 @@ export default function Index() {
         <div style={styles.headerBackground}>
           <Container>
             <div style={styles.logoContainer}>
-              <Image
+              {/* <Image
                 src={Logo}
-                alt="Onyx Creative Labs Logo"
+                alt="Silicon Vallejo Logo"
                 width={300}
                 height={75}
-              />
+              /> */}
             </div>
             <p style={{ ...styles.text, padding: '0 20px', margin: '20px 0' }}>
-              We’re a full-service digital marketing agency dedicated to delivering innovative technology solutions for small businesses and nonprofits. We specialize in web development, SEO, and content marketing, all while nurturing the next generation of tech talent through hands-on experience and mentorship.
+              Silicon Vallejo is a tech incubator based in Vallejo, California, dedicated to fostering innovation in artificial intelligence and sustainable energy. We support startups and individuals who are working to solve real-world problems with cutting-edge technology and a commitment to local impact.
             </p>
             <div style={styles.buttonContainer}>
-              <Link href="/contact">
+              <Link href="">
                 <Button variant="contained" color="success" type="submit">
-                  Start Project
+                  Join the Incubator
                 </Button>
               </Link>
-              <Link href="https://calendly.com/jeremy-onyxcreativelabs/client-discovery">
+              <Link href="">
                 <Button variant="contained" color="primary" type="submit">
-                  30 Min Free Consult
+                  Schedule a Consultation
                 </Button>
               </Link>
             </div>
@@ -96,13 +96,13 @@ export default function Index() {
                 >
                   <h1 style={styles.header}>How It Works</h1>
                   <p style={styles.text}>
-                    At Onyx Creative Labs, we provide high-quality marketing and web development services by leveraging the skills of our students who are eager to gain real-world experience. Our unique approach ensures your project is handled with care, expertise, and a fresh perspective.
+                    At Silicon Vallejo, we nurture high-impact innovation by providing hands-on mentorship, resource access, and community collaboration for entrepreneurs focused on AI and sustainable energy. Our members receive real-world experience, technical guidance, and support building scalable, socially responsible solutions.
                   </p>
                   <Button
                     color="success"
                     size="lg"
                     style={styles.button}
-                    href="/how-it-works"
+                    href=""
                   >
                     Learn More
                   </Button>
@@ -118,18 +118,18 @@ export default function Index() {
                     style={styles.content}
                   >
                     <h1 style={styles.header}>
-                      Empower the Next Generation of Tech Talent
+                      Empowering the Next Generation of Tech Leaders
                     </h1>
                     <p style={styles.text}>
-                      What sets us apart is our unique approach to talent development. Your projects will be handled by our talented students, who work under the guidance of an experienced senior developer acting as a mentor. This ensures that your website or app is not only expertly crafted but also continually maintained with the latest industry practices.
+                      Through our programs, entrepreneurs gain access to mentorship, project resources, and pitch opportunities. Our network connects innovators with funders, educators, and local leaders to drive forward the future of clean energy and AI applications rooted in Vallejo’s resilient spirit.
                     </p>
                     <Button
                       color="success"
                       size="lg"
                       style={styles.button}
-                      href="/contact"
+                      href=""
                     >
-                      Start Project
+                      Apply Now
                     </Button>
                   </Col>
                 </Row>

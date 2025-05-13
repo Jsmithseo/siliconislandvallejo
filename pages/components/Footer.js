@@ -7,13 +7,12 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md="4">
-            <h5>About Onyx Creative Labs</h5>
+            <h5>About Silicon Island Vallejo</h5>
             <p>
-              Onyx Creative Labs is a full-service digital marketing and development agency focused on delivering customized solutions for businesses of all sizes. We specialize in web development, SEO, content marketing, and more.
             </p>
           </Col>
           <Col md="4">
-            <h5>Quick Links</h5>
+            {/* <h5>Quick Links</h5>
             <ul className="list-unstyled">
             <li><a href="/apprenticeship" className="text-white">Apprenticeship Program</a></li>
             <li><a href="/donate" className="text-white">Donate</a></li>
@@ -22,20 +21,18 @@ const Footer = () => {
               <li><a href="/tax-form" className="text-white">Request Tax Information</a></li>  
               <li><a href="/optin" className="text-white">Opt In</a></li> 
               <li><a href="/privacy" className="text-white">Privacy</a></li>             
-            </ul>
+            </ul> */}
           </Col>
           <Col md="4">
             <h5>Contact Us</h5>
             <p>
-              Onyx Creative Labs Inc<br />
-              Phone: 510-925-7174<br />
-              Email: Jeremy@onyxcreativelabs.com
+              Email: info@siliconislandvallejo.com
             </p>
           </Col>
         </Row>
         <Row>
           <Col className="text-center mt-4">
-            <p>&copy; {new Date().getFullYear()} Onyx Creative Labs. All Rights Reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Silicon Island Vallejo. All Rights Reserved.</p>
           </Col>
         </Row>
       </Container>
