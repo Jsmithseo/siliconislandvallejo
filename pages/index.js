@@ -69,7 +69,7 @@ export default function Index() {
               /> */}
             </div>
             <p style={{ ...styles.text, padding: '0 20px', margin: '20px 0' }}>
-              Silicon Vallejo is a tech incubator based in Vallejo, California, dedicated to fostering innovation in artificial intelligence and sustainable energy. We support startups and individuals who are working to solve real-world problems with cutting-edge technology and a commitment to local impact.
+              Silicon Island Vallejo is a tech incubator based in Vallejo, California, dedicated to fostering innovation in artificial intelligence and sustainable energy. We support startups and individuals who are working to solve real-world problems with cutting-edge technology and a commitment to local impact.
             </p>
             <div style={styles.buttonContainer}>
               <Link href="">
@@ -96,7 +96,7 @@ export default function Index() {
                 >
                   <h1 style={styles.header}>How It Works</h1>
                   <p style={styles.text}>
-                    At Silicon Vallejo, we nurture high-impact innovation by providing hands-on mentorship, resource access, and community collaboration for entrepreneurs focused on AI and sustainable energy. Our members receive real-world experience, technical guidance, and support building scalable, socially responsible solutions.
+                    At Silicon Island Vallejo, we nurture high-impact innovation by providing hands-on mentorship, resource access, and community collaboration for entrepreneurs focused on AI and sustainable energy. Our members receive real-world experience, technical guidance, and support building scalable, socially responsible solutions.
                   </p>
                   <Button
                     color="success"
