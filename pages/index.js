@@ -20,7 +20,6 @@ export default function Index() {
       alignItems: 'center',
       justifyContent: 'center',
       textAlign: 'center',
-      padding: '40px 20px',
       width: '100vw',
       marginLeft: 'calc(-50vw + 50%)',
       flexDirection: 'column',
