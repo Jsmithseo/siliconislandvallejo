@@ -11,7 +11,6 @@ export default function Index() {
       overflowX: 'hidden',
     },
     heroSection: {
-      backgroundImage: 'url("/Hero.png")', // Ensure Hero.png is in /public
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
@@ -99,40 +98,25 @@ export default function Index() {
         <CssBaseline />
 
         {/* HERO SECTION */}
-        <div style={styles.heroSection}>
-          <div style={styles.heroOverlay}></div>
-          <div style={styles.heroContent}>
-            <Container>
-              <h1 style={styles.heroHeading}>Fueling Innovation in Vallejo</h1>
-              <p style={styles.heroSubtext}>
-                Join a new wave of creators solving real-world problems in AI and sustainable energy.
-              </p>
-              <div style={styles.buttonContainer}>
-                <Link href="">
-                  <Button variant="contained" color="success" type="submit">
-                    Join the Incubator
-                  </Button>
-                </Link>
-                <Link href="">
-                  <Button variant="contained" color="primary" type="submit">
-                    Book a Call
-                  </Button>
-                </Link>
-              </div>
-            </Container>
-          </div>
-        </div>
-
-        {/* INTRO SECTION */}
-        <div style={styles.headerBackground}>
+        <picture>
+          <source media="(max-width: 320px)" srcSet="silicon-island-320w.jpg" />
+          <source media="(max-width: 480px)" srcSet="silicon-island-480w.jpg" />
+          <source media="(max-width: 768px)" srcSet="silicon-island-768w.jpg" />
+          <source media="(max-width: 1024px)" srcSet="silicon-island-1024w.jpg" />
+          <img
+            src="silicon-island-1200w.jpg"
+            alt="Silicon Island Vallejo Hero"
+            style={{ ...styles.heroSection }}
+          />
+        </picture>
+        <div style={styles.heroOverlay}></div>
+        <div style={styles.heroContent}>
           <Container>
-            <div style={styles.logoContainer}>
-              {/* Optional Logo Here */}
-            </div>
-            <p style={{ ...styles.text, padding: '0 20px', margin: '20px 0' }}>
-              Silicon Island Vallejo is a tech incubator based in Vallejo, California, dedicated to fostering innovation in artificial intelligence and sustainable energy. We support startups and individuals who are working to solve real-world problems with cutting-edge technology and a commitment to local impact.
+            <h1 style={styles.heroHeading}>Fueling Innovation in Vallejo</h1>
+            <p style={styles.heroSubtext}>
+              Join a new wave of creators solving real-world problems in AI and sustainable energy.
             </p>
-            {/* <div style={styles.buttonContainer}>
+            <div style={styles.buttonContainer}>
               <Link href="">
                 <Button variant="contained" color="success" type="submit">
                   Join the Incubator
@@ -140,10 +124,20 @@ export default function Index() {
               </Link>
               <Link href="">
                 <Button variant="contained" color="primary" type="submit">
-                  Schedule a Consultation
+                  Book a Call
                 </Button>
               </Link>
-            </div> */}
+            </div>
+          </Container>
+        </div>
+
+        {/* INTRO SECTION */}
+        <div style={styles.headerBackground}>
+          <Container>
+            <div style={styles.logoContainer}></div>
+            <p style={{ ...styles.text, padding: '0 20px', margin: '20px 0' }}>
+              Silicon Island Vallejo is a tech incubator based in Vallejo, California, dedicated to fostering innovation in artificial intelligence and sustainable energy. We support startups and individuals who are working to solve real-world problems with cutting-edge technology and a commitment to local impact.
+            </p>
           </Container>
         </div>
 
@@ -152,21 +146,12 @@ export default function Index() {
           <div style={{ marginTop: '60px' }}>
             <Container>
               <Row>
-                <Col
-                  md={{ size: 12 }}
-                  className="text-center"
-                  style={styles.content}
-                >
+                <Col md={{ size: 12 }} className="text-center" style={styles.content}>
                   <h1 style={styles.header}>How It Works</h1>
                   <p style={styles.text}>
                     At Silicon Island Vallejo, we nurture high-impact innovation by providing hands-on mentorship, resource access, and community collaboration for entrepreneurs focused on AI and sustainable energy. Our members receive real-world experience, technical guidance, and support building scalable, socially responsible solutions.
                   </p>
-                  <Button
-                    color="success"
-                    size="lg"
-                    style={styles.button}
-                    href=""
-                  >
+                  <Button color="success" size="lg" style={styles.button} href="">
                     Learn More
                   </Button>
                 </Col>
@@ -175,23 +160,12 @@ export default function Index() {
             <div style={styles.backgroundSection}>
               <Container>
                 <Row>
-                  <Col
-                    md={{ size: 12 }}
-                    className="text-center"
-                    style={styles.content}
-                  >
-                    <h1 style={styles.header}>
-                      Empowering the Next Generation of Tech Leaders
-                    </h1>
+                  <Col md={{ size: 12 }} className="text-center" style={styles.content}>
+                    <h1 style={styles.header}>Empowering the Next Generation of Tech Leaders</h1>
                     <p style={styles.text}>
                       Through our programs, entrepreneurs gain access to mentorship, project resources, and pitch opportunities. Our network connects innovators with funders, educators, and local leaders to drive forward the future of clean energy and AI applications rooted in Vallejo’s resilient spirit.
                     </p>
-                    <Button
-                      color="success"
-                      size="lg"
-                      style={styles.button}
-                      href=""
-                    >
+                    <Button color="success" size="lg" style={styles.button} href="">
                       Apply Now
                     </Button>
                   </Col>
